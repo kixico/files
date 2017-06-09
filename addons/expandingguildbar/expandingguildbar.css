@@ -9,6 +9,8 @@
 .guilds-wrapper .scroller::-webkit-scrollbar-thumb{background-color:#3E3E3F!important;border-color:transparent!important;}
 .guilds-wrapper .scroller::-webkit-scrollbar-track-piece{background-color:transparent!important;border-color:transparent!important;}
 .guilds-wrapper:hover .scroller-wrap .guilds .guild{visibility:visible;}
+.guilds-wrapper div .guilds #bd-pub-li.guild{margin-top:10px!important;}
+.guilds-wrapper .guilds .friends-online{margin-top:18px!important;margin-left:15px!important;}
 .guilds-wrapper .scroller-wrap .guilds .guild{margin:0 10px!important;visibility:hidden;transition:all 250ms linear;}
 
 .guilds-wrapper .scroller-wrap .guilds .guild-placeholder{border:2px dashed #535559!important;border-color:#2f2f2f!important;min-width:50px!important;background-color:#535559;}
