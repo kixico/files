@@ -82,7 +82,7 @@
 .chat .content div > form .channel-textarea .channel-textarea-inner textarea{}
 .chat .content div > form .channel-textarea .channel-textarea-inner .channel-textarea-emoji{}
 .chat .content div > form .channel-textarea .channel-textarea-inner .channel-textarea-emoji>.sprite-item{}
-.chat .content div form .typing{}
+.chat .content div form .typing{background-color:transparent;}
 .chat .content div .messages-wrapper div .messages .message-group{padding:20px 0px 20px 20px;margin:0;}
 .chat .content div .messages-wrapper div .messages .message-group .avatar-large{}
 .chat .content div .messages-wrapper div .messages .message-group .comment{}
