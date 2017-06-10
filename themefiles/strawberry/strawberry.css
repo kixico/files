@@ -89,6 +89,8 @@
 .chat .content div .messages-wrapper div .messages .message-group:nth-child(odd){background-color:#373738;}
 /*.chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="139995409631281152"] ~ .comment{background:#2C2C2D;padding:5px 10px;margin-right:0;border-radius:.5em 0 0 .5em;}*/
 .chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="139995409631281152"] ~ .comment .message .body > h2 .username-wrapper:after{content:"papi";background-color:MediumSeaGreen;padding:0 4px;border-radius:4px;color:#fff;margin-left:5px;text-shadow:1px 1px #000;padding-bottom:1.5px;}
+.chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="133745216246120448"] ~ .comment .message .body > h2 .username-wrapper:after{content:"Profe";background-color:DarkOrchid;padding:0 4px;border-radius:4px;color:#fff;margin-left:5px;text-shadow:1px 1px #000;padding-bottom:1.5px;}
+
 .chat .messages::-webkit-scrollbar{width:10px;}
 .chat .messages::-webkit-scrollbar-thumb{background-color:#1E1E1F!important;border-color:transparent!important;border:0px;border-radius:2em 2em 0 0;}
 .chat .messages::-webkit-scrollbar-track-piece{background-color:#2C2C2D!important;border-color:transparent!important;border:0px;border-radius:0;}
@@ -101,10 +103,12 @@
 .chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member.popout-open{}
 .chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small{width:34px;height:34px;background-size:34px 34px;border-radius:6px;margin-right:0;margin-left:2px;}
 .chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small .status{margin-left:-2px;left:0;width:34px;height:34px;border-radius:10px;border:2px solid currentColor!important;background-color:transparent!important;}
+.chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small .status.status-typing{width:34px!important}
+.chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small .status.status-typing .spinner .spinner-inner{}
+.chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small .status.status-typing .spinner .spinner-inner .spinner-item{width:6px;height:6px;opacity:1;}
 .chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small .status-online{color:#43b581;}
 .chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small .status-idle{color:#faa61a;}
 .chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small .status-dnd{color:#f04747;}
-.chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small .status-dnd{color:transparent;}
 .chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small .status-streaming{color:#593695;}
 .chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .member-inner{width:152px;margin-left:-8px;padding-left:18px;min-height:38px;max-height:38px;display:flex;justify-content:center;flex-direction:column;}
 /*.chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small .status[class*="status-online"] ~ .member-inner{border:1px solid Green;}*/
