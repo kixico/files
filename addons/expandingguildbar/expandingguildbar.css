@@ -1,3 +1,21 @@
+@keyframes newmessage{
+0% {left:4px;}
+25% {left:4px;}
+50% {left:215px;}
+55% {left:215px;}
+70% {left:215px;background:#1ec7e6;}
+100% {left:4px;}
+}
+
+@keyframes newmessageopen{
+0% {left:.2%;}
+25% {left:.2%;}
+50% {left:49.8%;}
+55% {left:49.8%;}
+70% {left:49.8%;background:#1ec7e6;}
+100% {left:.2%;}
+}
+
 .guilds-wrapper{order:initial!important;flex-direction:row;width:100%;max-width:230px;height:100px;max-height:16px;position:absolute;bottom:0;z-index:110;overflow:hidden;background:transparent!important;-webkit-box-orient:horizontal;box-shadow:0 0 5px #1E1E1F;transition:all 250ms linear;}
 .guilds-wrapper:hover,.guilds-wrapper:focus{max-width:100%;max-height:125px!important;transition:all 250ms linear;}
 .guilds-wrapper .scroller-wrap{padding-top:0;}
@@ -16,3 +34,7 @@
 .guilds-wrapper .scroller-wrap .guilds .guild-placeholder{border:2px dashed #535559!important;border-color:#2f2f2f!important;min-width:50px!important;background-color:#535559;}
 
 .guilds-wrapper .scroller-wrap .guilds .dms{display:flex;margin:0 10px;flex-direction:row;}
+
+.guilds-wrapper .new-messages-indicator{width:14px;height:14px;border-radius:16px;font-size:0;animation:newmessage 5s infinite;bottom:1px;transition:all 250ms linear;}
+.guilds-wrapper .new-messages-indicator > span{display:none;}
+.guilds-wrapper:hover .new-messages-indicator{animation:newmessageopen 5s infinite;width:50%;top:0;border-radius:16px;transition:all 250ms linear;}
