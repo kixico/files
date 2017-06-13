@@ -9,13 +9,14 @@
 
 .guilds-wrapper{background:#1E1E1F;}
 .guilds-wrapper .scroller-wrap{padding-top:58px;}
-.guilds-wrapper div .guilds{}
-.guilds-wrapper div .guilds .guild:nth-child(1){position:absolute;top:-4px;z-index:2;}
-.guilds-wrapper div .guilds #bd-pub-li.guild{height:30px!important;margin:0!important;}
-.guilds-wrapper div .guilds .guild:nth-child(2) .guild-inner{height:30px!important;}
-.guilds-wrapper div .guilds .guild:nth-child(2) a{height:30px;}
-.guilds-wrapper div .guilds .guild:nth-child(2) #bd-pub-button{line-height:30px!important;}
-.guilds-wrapper div .guilds .guild{margin:10px 0!important;}
+.guilds-wrapper .scroller-wrap .guilds{}
+.guilds-wrapper .scroller-wrap .guilds .guild:nth-child(1){position:absolute;top:-4px;z-index:2;}
+.guilds-wrapper .scroller-wrap .guilds .dms .guild{position:relative;top:0;z-index:initial;}
+.guilds-wrapper .scroller-wrap .guilds #bd-pub-li.guild{height:30px!important;margin:0!important;}
+.guilds-wrapper .scroller-wrap .guilds .guild:nth-child(2) .guild-inner{height:30px!important;}
+.guilds-wrapper .scroller-wrap .guilds .guild:nth-child(2) a{height:30px;}
+.guilds-wrapper .scroller-wrap .guilds .guild:nth-child(2) #bd-pub-button{line-height:30px!important;}
+.guilds-wrapper .scroller-wrap .guilds .guild{margin:10px 0!important;}
 .guilds-wrapper .guilds .guild .guild-inner{border-radius:2em!important;}
 .guilds-wrapper .guilds .guild.unread:before{background:transparent;height:58px;width:58px;border-radius:2em;left:-4px;margin-top:-29px;box-shadow:inset 0 0 20px rgba(255,255,255,1);}
 .guilds-wrapper .guilds .guild.selected.unread:before{background:transparent;height:58px;width:58px;border-radius:2em;left:-4px;margin-top:-29px;box-shadow:inset 0 0 20px rgba(236,195,67,1)}
@@ -74,7 +75,7 @@
 
 .chat .content{background-color:transparent!important;}
 .chat .content div .messages-wrapper{background-color:#3E3E3F;}
-.chat .content div form{}
+.chat .content div form{border-top:0;}
 .chat .content div > form .channel-textarea{margin:10px 0;}
 .chat .content div > form .channel-textarea .channel-textarea-inner{}
 .chat .content div > form .channel-textarea .channel-textarea-inner .channel-textarea-upload{}
@@ -82,10 +83,8 @@
 .chat .content div > form .channel-textarea .channel-textarea-inner textarea{}
 .chat .content div > form .channel-textarea .channel-textarea-inner .channel-textarea-emoji{}
 .chat .content div > form .channel-textarea .channel-textarea-inner .channel-textarea-emoji>.sprite-item{}
-.chat .content div form .typing{padding:4px 0;background-color:transparent;bottom:initial;left:initial;right:-10px;direction:rtl;top:-30px;}
+.chat .content div form .typing{pointer-event:none;padding:4px 0;background-color:transparent;bottom:initial;left:initial;left:-20px;direction:ltr;top:-30px;}
 .chat .content div form .typing > span{background-color:#2C2C2D;}
-/*.chat .content div form .typing .ellipsis{padding-right:2px;margin-top:0;padding-left:4px;order:2;border-top-left-radius:24px;padding-left:14px;}
-.chat .content div form .typing .text{order:1;padding-right:8px;}*/
 .chat .content div form .typing .ellipsis{padding-right:2px;margin-top:0;padding-left:4px;padding-left:8px;}
 .chat .content div form .typing .text{padding-right:8px;border-top-right-radius:24px;}
 .chat .content div .messages-wrapper div .messages .message-group{padding:20px 0px 20px 20px;margin:0;}
@@ -96,6 +95,9 @@
 /*.chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="139995409631281152"] ~ .comment{background:#2C2C2D;padding:5px 10px;margin-right:0;border-radius:.5em 0 0 .5em;}*/
 .chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="139995409631281152"] ~ .comment .message .body > h2 .username-wrapper:after{content:"papi";background-color:MediumSeaGreen;padding:0 4px;border-radius:4px;color:#fff;margin-left:5px;text-shadow:1px 1px #000;padding-bottom:1.5px;}
 .chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="133745216246120448"] ~ .comment .message .body > h2 .username-wrapper:after{content:"Profe";background-color:DarkOrchid;padding:0 4px;border-radius:4px;color:#fff;margin-left:5px;text-shadow:1px 1px #000;padding-bottom:1.5px;}
+.chat .content div .messages-wrapper .jump-to-present-bar{border-radius:24px 0 0 0;left:initial;background-color:#2C2C2D;right:10px;}
+.chat .content div .messages-wrapper .jump-to-present-bar > button:nth-child(1){padding:5px 10px;font-size:12px;text-transform:uppercase;}
+.chat .content div .messages-wrapper .jump-to-present-bar > button:nth-child(2){}
 
 .chat .messages::-webkit-scrollbar{width:10px;}
 .chat .messages::-webkit-scrollbar-thumb{background-color:#1E1E1F!important;border-color:transparent!important;border:0px;border-radius:2em 2em 0 0;}
@@ -181,3 +183,4 @@
 #user-profile-modal .scroller-wrap .guilds .section .connected-account .connected-account-name-inner .connected-account-name{color:#ccc;}
 #user-profile-modal .scroller-wrap .guilds .guild{color:#ccc;}
 #user-profile-modal .scroller-wrap .guilds .guild:hover{background:linear-gradient(90deg,#2C2C2D,#373738);}
+#user-profile-modal .empty{background:#373738;}
