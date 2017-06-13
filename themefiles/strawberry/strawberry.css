@@ -92,6 +92,7 @@
 .chat .content div .messages-wrapper div .messages .message-group .avatar-large{}
 .chat .content div .messages-wrapper div .messages .message-group .comment{}
 .chat .content div .messages-wrapper div .messages .message-group:nth-child(odd){background-color:#373738;}
+.chat .content div .messages-wrapper div .messages .message-group:last-child{padding-bottom:30px;}
 /*.chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="139995409631281152"] ~ .comment{background:#2C2C2D;padding:5px 10px;margin-right:0;border-radius:.5em 0 0 .5em;}*/
 .chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="139995409631281152"] ~ .comment .message .body > h2 .username-wrapper:after{content:"papi";background-color:MediumSeaGreen;padding:0 4px;border-radius:4px;color:#fff;margin-left:5px;text-shadow:1px 1px #000;padding-bottom:1.5px;}
 .chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="133745216246120448"] ~ .comment .message .body > h2 .username-wrapper:after{content:"Profe";background-color:DarkOrchid;padding:0 4px;border-radius:4px;color:#fff;margin-left:5px;text-shadow:1px 1px #000;padding-bottom:1.5px;}
