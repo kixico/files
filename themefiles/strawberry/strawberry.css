@@ -7,8 +7,8 @@
 .theme-dark .layers{background:transparent;}
 .theme-dark .layer{background:transparent;}
 
-.guilds-wrapper{background:#1E1E1F;}
-.guilds-wrapper .scroller-wrap{padding-top:58px;}
+.guilds-wrapper{background:#1E1E1F;padding-top:57px;}
+.guilds-wrapper .scroller-wrap{padding-top:58px;margin-top:-57px;}
 .guilds-wrapper .scroller-wrap .guilds{}
 .guilds-wrapper .scroller-wrap .guilds .guild:nth-child(1){position:absolute;top:-4px;z-index:2;}
 .guilds-wrapper .scroller-wrap .guilds .dms .guild{position:relative;top:0;z-index:initial;}
