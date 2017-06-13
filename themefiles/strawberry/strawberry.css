@@ -84,8 +84,8 @@
 .chat .content div > form .channel-textarea .channel-textarea-inner .channel-textarea-emoji>.sprite-item{}
 .chat .content div form .typing{padding:4px 0;background-color:transparent;bottom:initial;left:initial;right:-10px;direction:rtl;top:-30px;}
 .chat .content div form .typing > span{background-color:#2C2C2D;}
-.chat .content div form .typing .ellipsis{padding-right:4px;margin-top:0;padding-left:4px;order:2;border-top-left-radius:32px;padding-left:14px;}
-.chat .content div form .typing .text{order:1;}
+.chat .content div form .typing .ellipsis{padding-right:2px;margin-top:0;padding-left:4px;order:2;border-top-left-radius:24px;padding-left:14px;}
+.chat .content div form .typing .text{order:1;padding-right:8px;}
 .chat .content div .messages-wrapper div .messages .message-group{padding:20px 0px 20px 20px;margin:0;}
 .chat .content div .messages-wrapper div .messages .message-group .avatar-large{}
 .chat .content div .messages-wrapper div .messages .message-group .comment{}
