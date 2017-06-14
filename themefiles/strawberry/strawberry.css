@@ -1,3 +1,5 @@
+//META{"name":"LivestraWberry","description":"straw berries¿","author":"Kiwiz","version":"6.6.6"}*//
+
 :root{
 	--version-content:"V1";
 }
@@ -90,7 +92,9 @@
 .chat .content div .messages-wrapper div .messages .message-group{padding:20px 0px 20px 20px;margin:0;}
 .chat .content div .messages-wrapper div .messages .message-group .avatar-large{}
 .chat .content div .messages-wrapper div .messages .message-group .comment{}
-.chat .content div .messages-wrapper div .messages .message-group:nth-child(odd){background-color:#373738;}
+.chat .content div .messages-wrapper div .messages [class*=message-group]:nth-child(odd){background-color:#373738;}
+.chat .content div .messages-wrapper div .messages [class*=message-group]:nth-child(even){background-color:inherit;}
+/*.chat .content div .messages-wrapper div .messages .message-group:nth-child(odd){background-color:#373738;}*/
 .chat .content div .messages-wrapper div .messages .message-group:last-child{padding-bottom:30px;}
 /*.chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="139995409631281152"] ~ .comment{background:#2C2C2D;padding:5px 10px;margin-right:0;border-radius:.5em 0 0 .5em;}*/
 .comment .message .body > h2 .username-wrapper:after{padding:0 2px;border-radius:4px;color:#fff;margin-left:5px;text-shadow:0 0 4px #000;padding-bottom:1.5px;font-size:14px;}
@@ -102,7 +106,9 @@
 /*.chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="169220240637427713"] ~ .comment .message .body > h2 .username-wrapper:after{content:"Spikey";background-color:#7DF9FF;}
 .chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="188424723443613697"] ~ .comment .message .body > h2 .username-wrapper:after{content:"Woke Retard";background-color:rgb(231,76,60);}
 */
+/*
 .chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="272816684665012224"] ~ .comment .message .body > h2 .username-wrapper:after{content:"Mod-T";background-color:rgb(236,223,167);}
+.chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="157526224527294466"] ~ .comment .message .body > h2 .username-wrapper:after{content:"Mod-T";background-color:rgb(236,223,167);}
 .chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="239210656094617604"] ~ .comment .message .body > h2 .username-wrapper:after{content:"Mod-T";background-color:rgb(236,223,167);}
 .chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="148508200067399680"] ~ .comment .message .body > h2 .username-wrapper:after{content:"Mod-T";background-color:rgb(236,223,167);}
 .chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="298707353581256706"] ~ .comment .message .body > h2 .username-wrapper:after{content:"Mod-T";background-color:rgb(236,223,167);}
@@ -113,6 +119,7 @@
 
 .member-inner .member-username:after{padding:0 2px;border-radius:4px;color:#fff;margin-left:5px;text-shadow:0 0 4px #000;padding-bottom:1.5px;font-size:14px;}
 .chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small[style*="272816684665012224"] ~ .member-inner .member-username:after{content:"Mod-T";background-color:rgb(236,223,167);}
+.chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small[style*="157526224527294466"] ~ .member-inner .member-username:after{content:"Mod-T";background-color:rgb(236,223,167);}
 .chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small[style*="239210656094617604"] ~ .member-inner .member-username:after{content:"Mod-T";background-color:rgb(236,223,167);}
 .chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small[style*="148508200067399680"] ~ .member-inner .member-username:after{content:"Mod-T";background-color:rgb(236,223,167);}
 .chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small[style*="298707353581256706"] ~ .member-inner .member-username:after{content:"Mod-T";background-color:rgb(236,223,167);}
@@ -123,7 +130,7 @@
 .chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small[style*="102171010270261248"] ~ .member-inner .member-username:after{content:"Mod-Lead";background-color:rgb(231,76,60);}
 .chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small[style*="226497798399459339"] ~ .member-inner .member-username:after{content:"MOM";background-color:rgb(255,171,198);}
 .chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small[style*="203434999607721996"] ~ .member-inner .member-username:after{content:"DAD";background-color:rgb(255,0,26);}
-
+*/
 
 
 .chat .content div .messages-wrapper .jump-to-present-bar{border-radius:24px 0 0 0;left:initial;background-color:#2C2C2D;right:10px;}
