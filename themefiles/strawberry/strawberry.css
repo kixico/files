@@ -172,10 +172,11 @@
 .popout .user-popout .header{background:#1E1E1F;}
 .popout .user-popout .header .avatar-wrapper .avatar-popout{border:4px solid #3E3E3F;background-color:#3E3E3F;}
 .popout .user-popout .body{background:#2C2C2D;}
-.popout .user-popout .body .section{}
+.popout .user-popout .body .section.roles{}
 .popout .user-popout .body .section .member-roles{}
-.popout .user-popout .body .section .member-roles .member-role{background-color:currentColor!important;border:0;}
+.popout .user-popout .body .section .member-roles component.member-role{background-color:currentColor!important;border:0;}
 .popout .user-popout .body .section .member-roles .member-role .name{color:#fff;text-shadow:0 0 3px #000;}
+.popout .user-popout .body .section.notes .note textarea:focus{background:#3E3E3F;}
 
 .popout .user-popout .footer{background:#2C2C2D;border-top:0;box-shadow:inset 0 0 5px #1E1E1F,0 0 5px #1E1E1F;}
 .popout .user-popout .footer .quick-message-wrapper .quick-message{background:#3E3E3F;border:0 solid MediumSeaGreen;}
@@ -192,7 +193,7 @@
 #autocomplete-popout .scroller,#user-profile-modal .scroller-wrap .guilds::-webkit-scrollbar{width:10px;}
 #autocomplete-popout .scroller,#user-profile-modal .scroller-wrap .guilds::-webkit-scrollbar-thumb{background-color:#1E1E1F!important;border-color:transparent!important;border:0px;border-radius:32px;}
 #autocomplete-popout .scroller,#user-profile-modal .scroller-wrap .guilds::-webkit-scrollbar-track-piece{background-color:#2C2C2D!important;border-color:transparent!important;border:0px;border-radius:0;}
-
+	
 #user-profile-modal{box-shadow:0 0 10px rgba(30,30,31,1);}
 #user-profile-modal .header{background-color:#373738;background-image:none;}
 #user-profile-modal .header:after{background-image:none;}
