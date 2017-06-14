@@ -93,9 +93,39 @@
 .chat .content div .messages-wrapper div .messages .message-group:nth-child(odd){background-color:#373738;}
 .chat .content div .messages-wrapper div .messages .message-group:last-child{padding-bottom:30px;}
 /*.chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="139995409631281152"] ~ .comment{background:#2C2C2D;padding:5px 10px;margin-right:0;border-radius:.5em 0 0 .5em;}*/
-.chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="139995409631281152"] ~ .comment .message .body > h2 .username-wrapper:after{content:"papi";background-color:MediumSeaGreen;padding:0 4px;border-radius:4px;color:#fff;margin-left:5px;text-shadow:1px 1px #000;padding-bottom:1.5px;}
-.chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="133745216246120448"] ~ .comment .message .body > h2 .username-wrapper:after{content:"Profe";background-color:DarkOrchid;padding:0 4px;border-radius:4px;color:#fff;margin-left:5px;text-shadow:1px 1px #000;padding-bottom:1.5px;}
-.chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="176392179722223616"] ~ .comment .message .body > h2 .username-wrapper:after{content:"Tester";background-color:SlateGray;padding:0 4px;border-radius:4px;color:#fff;margin-left:5px;text-shadow:1px 1px #000;padding-bottom:1.5px;}
+.comment .message .body > h2 .username-wrapper:after{padding:0 2px;border-radius:4px;color:#fff;margin-left:5px;text-shadow:0 0 4px #000;padding-bottom:1.5px;font-size:14px;}
+.chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="139995409631281152"] ~ .comment .message .body > h2 .username-wrapper:after{content:"papi";background-color:MediumSeaGreen;}
+.chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="133745216246120448"] ~ .comment .message .body > h2 .username-wrapper:after{content:"Profe";background-color:DarkOrchid;}
+.chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="176392179722223616"] ~ .comment .message .body > h2 .username-wrapper:after{content:"Tester";background-color:SlateGray;}
+
+/*START DOGGOS CUNT*/
+/*.chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="169220240637427713"] ~ .comment .message .body > h2 .username-wrapper:after{content:"Spikey";background-color:#7DF9FF;}
+.chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="188424723443613697"] ~ .comment .message .body > h2 .username-wrapper:after{content:"Woke Retard";background-color:rgb(231,76,60);}
+*/
+.chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="272816684665012224"] ~ .comment .message .body > h2 .username-wrapper:after{content:"Mod-T";background-color:rgb(236,223,167);}
+.chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="239210656094617604"] ~ .comment .message .body > h2 .username-wrapper:after{content:"Mod-T";background-color:rgb(236,223,167);}
+.chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="148508200067399680"] ~ .comment .message .body > h2 .username-wrapper:after{content:"Mod-T";background-color:rgb(236,223,167);}
+.chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="298707353581256706"] ~ .comment .message .body > h2 .username-wrapper:after{content:"Mod-T";background-color:rgb(236,223,167);}
+.chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="110970050105593856"] ~ .comment .message .body > h2 .username-wrapper:after{content:"Mod-T";background-color:rgb(236,223,167);}
+.chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="215450196736344064"] ~ .comment .message .body > h2 .username-wrapper:after{content:"Mod-L";background-color:rgb(230,126,34);}
+.chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="152642408083881984"] ~ .comment .message .body > h2 .username-wrapper:after{content:"Mod-L";background-color:rgb(230,126,34);}
+.chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="188424723443613697"] ~ .comment .message .body > h2 .username-wrapper:after{content:"Mod-Lead";background-color:rgb(231,76,60);}
+
+.member-inner .member-username:after{padding:0 2px;border-radius:4px;color:#fff;margin-left:5px;text-shadow:0 0 4px #000;padding-bottom:1.5px;font-size:14px;}
+.chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small[style*="272816684665012224"] ~ .member-inner .member-username:after{content:"Mod-T";background-color:rgb(236,223,167);}
+.chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small[style*="239210656094617604"] ~ .member-inner .member-username:after{content:"Mod-T";background-color:rgb(236,223,167);}
+.chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small[style*="148508200067399680"] ~ .member-inner .member-username:after{content:"Mod-T";background-color:rgb(236,223,167);}
+.chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small[style*="298707353581256706"] ~ .member-inner .member-username:after{content:"Mod-T";background-color:rgb(236,223,167);}
+.chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small[style*="110970050105593856"] ~ .member-inner .member-username:after{content:"Mod-T";background-color:rgb(236,223,167);}
+.chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small[style*="215450196736344064"] ~ .member-inner .member-username:after{content:"Mod-L";background-color:rgb(230,126,34);}
+.chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small[style*="152642408083881984"] ~ .member-inner .member-username:after{content:"Mod-L";background-color:rgb(230,126,34);}
+.chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small[style*="188424723443613697"] ~ .member-inner .member-username:after{content:"Mod-Lead";background-color:rgb(231,76,60);}
+.chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small[style*="102171010270261248"] ~ .member-inner .member-username:after{content:"Mod-Lead";background-color:rgb(231,76,60);}
+.chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small[style*="226497798399459339"] ~ .member-inner .member-username:after{content:"MOM";background-color:rgb(255,171,198);}
+.chat .content .channel-members-wrap .ui-scroller-wrap .channel-members .member .avatar-small[style*="203434999607721996"] ~ .member-inner .member-username:after{content:"DAD";background-color:rgb(255,0,26);}
+
+
+
 .chat .content div .messages-wrapper .jump-to-present-bar{border-radius:24px 0 0 0;left:initial;background-color:#2C2C2D;right:10px;}
 .chat .content div .messages-wrapper .jump-to-present-bar > button:nth-child(1){padding:5px 10px;font-size:12px;text-transform:uppercase;}
 .chat .content div .messages-wrapper .jump-to-present-bar > button:nth-child(2){}
@@ -140,9 +170,15 @@
 /********************************************************/
 .popout .user-popout{box-shadow:0 0 10px rgba(30,30,31,1);}
 .popout .user-popout .header{background:#1E1E1F;}
+.popout .user-popout .header .avatar-wrapper .avatar-popout{border:4px solid #3E3E3F;background-color:#3E3E3F;}
 .popout .user-popout .body{background:#2C2C2D;}
-.popout .user-popout .footer{background:#2C2C2D;border-top:1px solid MediumSeaGreen;}
-.popout .user-popout .footer .quick-message-wrapper .quick-message{background:#3E3E3F;border:1px solid MediumSeaGreen;}
+.popout .user-popout .body .section{}
+.popout .user-popout .body .section .member-roles{}
+.popout .user-popout .body .section .member-roles .member-role{background-color:currentColor!important;border:0;}
+.popout .user-popout .body .section .member-roles .member-role .name{color:#fff;text-shadow:0 0 3px #000;}
+
+.popout .user-popout .footer{background:#2C2C2D;border-top:0;box-shadow:inset 0 0 5px #1E1E1F,0 0 5px #1E1E1F;}
+.popout .user-popout .footer .quick-message-wrapper .quick-message{background:#3E3E3F;border:0 solid MediumSeaGreen;}
 
 .popout .context-menu{background:#373738;box-shadow:0 0 10px rgba(30,30,31,1);}
 
