@@ -14,6 +14,7 @@
 
 .guilds-wrapper{background:#1E1E1F;padding-top:57px;}
 .guilds-wrapper .scroller-wrap{padding-top:58px;margin-top:-57px;}
+.guilds-wrapper .scroller-wrap .scroller::-webkit-scrollbar{width:0px!important;}
 .guilds-wrapper .scroller-wrap .guilds{}
 .guilds-wrapper .scroller-wrap .guilds .guild:nth-child(1){position:absolute;top:-8px;z-index:2;}
 .guilds-wrapper .scroller-wrap .guilds .guild:nth-child(1) .badge{bottom:-1px;}
@@ -237,3 +238,42 @@ background-image:url(https://cdn.rawgit.com/Kiwez/files/master/themefiles/icons/
 .ui-standard-sidebar-view{}
 .ui-standard-sidebar-view .sidebar-region{background:#2C2C2D!important;}
 .ui-standard-sidebar-view .content-region{background:#3E3E3F!important;}
+
+@keyframes statuschanger-o{
+0% {opacity:0;transform:translate(-120px,-125px);}
+100% {opacity:1;transform:translate(-90px,-175px);}}
+
+@keyframes statuschanger-i{
+0% {opacity:0;transform:translate(-120px,-125px);}
+100% {opacity:1;transform:translate(-90px,-125px);}}
+
+@keyframes statuschanger-dnd{
+0% {opacity:0;transform:translate(-120px,-125px);}
+100% {opacity:1;transform:translate(-90px,-75px);}}
+
+@keyframes statuschanger-inv{
+0% {opacity:0;transform:translate(-120px,-125px);}
+100% {opacity:1;transform:translate(-90px,-25px);}}
+
+
+
+.status-picker.popout-menu .popout-menu-item{position:absolute;overflow:visible;}
+
+.status-picker.popout-menu{width:100%;height:100%;box-shadow:none;background:none!important;display:flex;margin:0!important;}
+.popout.popout-top:not(.no-arrow):not(.popout-invert){width:185px!important;height:65px!important;box-shadow:none!important;border-radius:5px;transform:none!important;overflow:visible!important;z-index:999;}
+.status-picker.popout-menu .popout-menu-item:nth-child(1):hover{animation-name:statuschanger-o;}
+.status-picker.popout-menu .popout-menu-item:nth-child(3):hover{animation-name:statuschanger-i;}
+.status-picker.popout-menu .popout-menu-item:nth-child(4):hover{animation-name:statuschanger-dnd;}
+.status-picker.popout-menu .popout-menu-item:nth-child(5):hover{animation-name:statuschanger-inv;}
+
+.status-picker.popout-menu .popout-menu-item:nth-child(1){animation-name:statuschanger-o;animation-delay:100ms;}
+.status-picker.popout-menu .popout-menu-item:nth-child(3){animation-name:statuschanger-i;animation-delay:400ms;}
+.status-picker.popout-menu .popout-menu-item:nth-child(4){animation-name:statuschanger-dnd;animation-delay:700ms;}
+.status-picker.popout-menu .popout-menu-item:nth-child(5){animation-name:statuschanger-inv;animation-delay:1000ms;}
+
+.status-picker .popout-menu-item{padding:0;color:#ccc;animation-direction:normal;animation-duration:500ms;animation-fill-mode:forwards;animation-iteration-count:1;animation-play-state:running;opacity:0; }
+.status-picker .popout-menu-item:hover{background-color:transparent;}
+.status-picker:hover .popout-menu-item{opacity:1;}
+.status-picker .popout-menu-separator{display:none;}
+.status-picker .popout-menu-item .status-icon-text .status{margin-right:6px!important;}
+.status-picker .popout-menu-item .status-icon-text .status-text{}
