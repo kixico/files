@@ -2,10 +2,17 @@
 	--version-content:"V1.1";
 }
 
+
 @import url('https://fonts.googleapis.com/css?family=Ranga');
 
 .theme-dark .layers{background:transparent;}
 .theme-dark .layer{background:transparent;}
+
+.titlebar{width:100%;height:12px;background-color:#2C2C2D;}
+.titlebar .win-buttons{padding-top:12px;height:44px;}
+
+.notice.notice-streamer-mode{padding-top:12px;}
+.notice .notice-dismiss{top:26px;}
 
 .status-online{color:#43b581;}
 .status-idle{color:#faa61a;}
@@ -16,8 +23,10 @@
 .guilds-wrapper .scroller-wrap{padding-top:58px;margin-top:-57px;}
 .guilds-wrapper .scroller-wrap .scroller::-webkit-scrollbar{width:0px!important;}
 .guilds-wrapper .scroller-wrap .guilds{}
-.guilds-wrapper .scroller-wrap .guilds .guild:nth-child(1){position:absolute;top:-8px;z-index:2;}
-.guilds-wrapper .scroller-wrap .guilds .guild:nth-child(1) .badge{bottom:-1px;}
+.guilds-wrapper .scroller-wrap .guilds .guild:nth-child(1){position:absolute;top:-8px;z-index:2;padding-top:12px;height:50px;}
+.guilds-wrapper .scroller-wrap .guilds .guild:nth-child(1) .guild-inner a{height:40px;}
+.guilds-wrapper .scroller-wrap .guilds .guild:nth-child(1) .guild-inner a .friends-icon{height:40px;}
+.guilds-wrapper .scroller-wrap .guilds .guild:nth-child(1) .badge{bottom:6px;right:-8px;}
 .guilds-wrapper .scroller-wrap .guilds .dms .guild{position:relative;top:0;z-index:initial;}
 .guilds-wrapper .scroller-wrap .guilds #bd-pub-li.guild{height:30px!important;margin:0!important;}
 .guilds-wrapper .scroller-wrap .guilds #bd-pub-li .guild-inner{height:30px!important;}
@@ -38,8 +47,9 @@
 .channels-wrap{background-color:#2C2C2D;}
 .channels-wrap > div:nth-child(1){}
 .channels-wrap > div:nth-child(1) > div:nth-child(1){}
-.channels-wrap > div:nth-child(1) > div:nth-child(1) > div{}
-.channels-wrap > div:nth-child(1) > div:nth-child(1) > div > header{background-color:#1E1E1F;}
+.channels-wrap > div:nth-child(1) > div[class=search-bar]{padding-top:12px;height:43px;}
+.channels-wrap > div:nth-child(1) > div:nth-child(1) > div[class*=container]{padding-top:12px;}
+.channels-wrap > div:nth-child(1) > div:nth-child(1) > div > header{background-color:#1E1E1F;height:44px;}
 .channels-wrap > div:nth-child(1) > div:nth-child(1) > div > header > span{letter-spacing:.05em;}
 /*Channels*/
 .channels-wrap > div:nth-child(1) > div:nth-child(3){}
@@ -81,7 +91,7 @@
 .channels-wrap .private-channels div div .channel.btn-friends{}
 
 .chat{background-color:#2C2C2D!important;}
-.chat .title-wrap{background:#1E1E1F;}
+.chat .title-wrap{background:#1E1E1F;padding-top:12px;}
 .chat .title-wrap .header-toolbar{}
 .chat .title-wrap .header-toolbar button span[style*='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0xMy4wMDYyODY2MiAyMmMuOTk5OTk5OTggMCAxLjcxNDI4NTY4LS40MDE5NTMxIDEuOTk5OTk5OTgtMS4wMDQ4ODI4aC0zLjk5OTk5OTk4Yy4yODU3MTQzLjYwMjkyOTcgMSAxLjAwNDg4MjggMiAxLjAwNDg4Mjh6bTYuOTgwNTI5NzgtMy45NjM0Mzk5VjEwYzAtMi42NC0yLjMwMjg2NjgtNC45NzUwMzY2Mi01LjAxMDU1OTEtNC45NzUwMzY2MiAwLS43Mi0uMzQ0MDU1Mi0xLjAyOTg0NjItMS45NzMxMTQtMS4wMjk4NDYyLTEuNjI5MDU4ODMgMC0xLjk2NTg1MDgyLjMwOTg0NjItMS45NjU4NTA4MiAxLjAyOTg0NjJDOC4zMjk2MDAxOCA1LjAyNDk2MzM4IDUuOTk1NDgzNCA3LjM2IDUuOTk1NDgzNCAxMHY4LjAzNjU2MDFoLS45ODkxOTY3OHYxLjk1MTQxNkgyMXYtMS45NTE0MTZoLTEuMDEzMTgzNnpNMTMuMDgzODk2MTYgMThsLTIuMDc4OTMwODIgMi4wMjcyMDQ1SDQuOTQxNjIwMzhWMThINnYtM2wyLTIuMDgyOTQyOTJWMTAuM0M4IDguNDMgOS40NDQ0NDQ0NCA3IDExLjMzMzMzMzMzIDdoMy4zMzMzMzMzN2MuMjA1ODcyMSAwIDEuMzU3OTgyNS0xLjkwOTA0NTggMS4zNTc5ODI1LTEuOTA5MDQ1OHMxLjMxODM5MDguMjc5MTU2OTIgMi41NTU1MzQzIDEuNTk4ODMzNjdjMS4yMzcxNDM2IDEuMzE5Njc2NzYgMS4zMjUzODg5IDMuMjUxOTI3NzQgMS4zMjUzODg5IDMuMjUxOTI3NzRMMTggMTIuOTQ1NDcyNTZWMThoLTQuOTE2MTAzODR6Ii8+CiAgICA8cGF0aCBzdHJva2U9IiNGMDQ3NDciIHN0cm9rZS13aWR0aD0iMiIgZD0iTTIxIDVMNSAyMSIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIvPgogIDwvZz4KPC9zdmc+");']{
 background-image:url(https://cdn.rawgit.com/Kiwez/files/master/themefiles/icons/mutedchannels.svg)!important;background-size:69%;}
@@ -146,7 +156,7 @@ background-image:url(https://cdn.rawgit.com/Kiwez/files/master/themefiles/icons/
 
 /********************************************************/
 #friends{background-color:#2C2C2D!important;}
-#friends .friends-header{background-color:#1E1E1F!important;}
+#friends .friends-header{background-color:#1E1E1F!important;padding-top:12px;height:44px;}
 #friends .friends-table{background-color:#2C2C2D;}
 #friends .friends-table .friends-table-header{}
 #friends .friends-table .scroller-wrap{}
@@ -277,3 +287,5 @@ background-image:url(https://cdn.rawgit.com/Kiwez/files/master/themefiles/icons/
 .status-picker .popout-menu-separator{display:none;}
 .status-picker .popout-menu-item .status-icon-text .status{margin-right:6px!important;}
 .status-picker .popout-menu-item .status-icon-text .status-text{}
+
+.emoji-picker{height:800px;}.emoji-picker .scroller{height:100%;}.emoji-picker .row .emoji-item.disabled{display:none;}
