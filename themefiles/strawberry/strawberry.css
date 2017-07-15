@@ -27,7 +27,9 @@
 .guilds-wrapper .scroller-wrap .guilds .guild:nth-child(1) .guild-inner a{height:40px;}
 .guilds-wrapper .scroller-wrap .guilds .guild:nth-child(1) .guild-inner a .friends-icon{height:40px;}
 .guilds-wrapper .scroller-wrap .guilds .guild:nth-child(1) .badge{bottom:6px;right:-8px;}
-.guilds-wrapper .scroller-wrap .guilds .dms .guild{position:relative;top:0;z-index:initial;}
+.guilds-wrapper .scroller-wrap .guilds .dms .guild{position:relative;top:0;z-index:initial;padding-top:0;}
+.guilds-wrapper .scroller-wrap .guilds .dms .guild .guild-inner a{height:50px;}
+.guilds-wrapper .scroller-wrap .guilds .dms .guild .guild-inner a .friends-icon{height:50px;}
 .guilds-wrapper .scroller-wrap .guilds #bd-pub-li.guild{height:30px!important;margin:0!important;}
 .guilds-wrapper .scroller-wrap .guilds #bd-pub-li .guild-inner{height:30px!important;}
 .guilds-wrapper .scroller-wrap .guilds #bd-pub-li a{height:30px;}
