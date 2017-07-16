@@ -1,5 +1,5 @@
 :root{
-	--version-content:"V1.1";
+	--version-content:"V1.2";
 }
 
 
@@ -30,6 +30,7 @@
 .guilds-wrapper .scroller-wrap .guilds .dms .guild{position:relative;top:0;z-index:initial;padding-top:0;}
 .guilds-wrapper .scroller-wrap .guilds .dms .guild .guild-inner a{height:50px;}
 .guilds-wrapper .scroller-wrap .guilds .dms .guild .guild-inner a .friends-icon{height:50px;}
+.guilds-wrapper .scroller-wrap .guilds .guild:nth-child(1) .badge{bottom:-1px;right:-1px;}
 .guilds-wrapper .scroller-wrap .guilds #bd-pub-li.guild{height:30px!important;margin:0!important;}
 .guilds-wrapper .scroller-wrap .guilds #bd-pub-li .guild-inner{height:30px!important;}
 .guilds-wrapper .scroller-wrap .guilds #bd-pub-li a{height:30px;}
@@ -253,19 +254,19 @@ background-image:url(https://cdn.rawgit.com/Kiwez/files/master/themefiles/icons/
 
 @keyframes statuschanger-o{
 0% {opacity:0;transform:translate(-120px,-125px);}
-100% {opacity:1;transform:translate(-90px,-175px);}}
+100% {opacity:1;transform:translate(-90px,-165px);}}
 
 @keyframes statuschanger-i{
 0% {opacity:0;transform:translate(-120px,-125px);}
-100% {opacity:1;transform:translate(-90px,-125px);}}
+100% {opacity:1;transform:translate(-90px,-130px);}}
 
 @keyframes statuschanger-dnd{
 0% {opacity:0;transform:translate(-120px,-125px);}
-100% {opacity:1;transform:translate(-90px,-75px);}}
+100% {opacity:1;transform:translate(-90px,-95px);}}
 
 @keyframes statuschanger-inv{
 0% {opacity:0;transform:translate(-120px,-125px);}
-100% {opacity:1;transform:translate(-90px,-25px);}}
+100% {opacity:1;transform:translate(-90px,-35px);}}
 
 
 
@@ -283,11 +284,13 @@ background-image:url(https://cdn.rawgit.com/Kiwez/files/master/themefiles/icons/
 .status-picker.popout-menu .popout-menu-item:nth-child(4){animation-name:statuschanger-dnd;animation-delay:700ms;}
 .status-picker.popout-menu .popout-menu-item:nth-child(5){animation-name:statuschanger-inv;animation-delay:1000ms;}
 
-.status-picker .popout-menu-item{padding:0;color:#ccc;animation-direction:normal;animation-duration:500ms;animation-fill-mode:forwards;animation-iteration-count:1;animation-play-state:running;opacity:0; }
+.status-picker .popout-menu-item{overflow:visible;padding:0;color:#ccc;animation-direction:normal;animation-duration:500ms;animation-fill-mode:forwards;animation-iteration-count:1;animation-play-state:running;opacity:0; }
 .status-picker .popout-menu-item:hover{background-color:transparent;}
 .status-picker:hover .popout-menu-item{opacity:1;}
+.status-picker .popout-menu-item .helper{margin:0 0 0 20px!important;width:150px;background-color:#1E1E1F;text-shadow:0 0 .5px White;padding:2px 6px;border-radius:0 4px 4px 0;}
+.status-picker:hover .popout-menu-item .helper{visibility:visible;}
 .status-picker .popout-menu-separator{display:none;}
-.status-picker .popout-menu-item .status-icon-text .status{margin-right:6px!important;}
-.status-picker .popout-menu-item .status-icon-text .status-text{}
+.status-picker .popout-menu-item .status-icon-text .status{margin-right:0px!important;border-radius:4px 0 0 4px;width:20px;height:20px;}
+.status-picker .popout-menu-item .status-icon-text .status-text{background-color:#1E1E1F;text-shadow:0 0 .5px White;padding:2px 6px;border-radius:0 4px 4px 0;}
 
 .emoji-picker{height:800px;}.emoji-picker .scroller{height:100%;}.emoji-picker .row .emoji-item.disabled{display:none;}
