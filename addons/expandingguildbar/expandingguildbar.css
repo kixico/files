@@ -7,7 +7,7 @@
 100% {left:4px;}
 }
 
-@keyframes newmessageopen{
+@keyframes newmessageopen-alt{
 0% {left:.2%;}
 25% {left:.2%;}
 50% {left:49.8%;}
@@ -16,10 +16,17 @@
 100% {left:.2%;}
 }
 
-.guilds-wrapper{padding-top:0!important;order:initial!important;flex-direction:row;width:100%;max-width:230px;height:100px;max-height:16px;position:absolute;bottom:0;z-index:110;overflow:hidden;background:transparent!important;-webkit-box-orient:horizontal;box-shadow:0 0 5px #1E1E1F;transition:all 250ms linear;}
+@keyframes newmessageopen{
+0% {}
+70% {background:#1ec7e6;}
+100% {}
+}
+
+.guilds-wrapper{padding-top:0px!important;order:initial!important;flex-direction:row;width:100%;max-width:230px;height:100px;max-height:16px;position:absolute;bottom:0;z-index:110;overflow:hidden;background:transparent!important;-webkit-box-orient:horizontal;transition:all 250ms linear;}
 .guilds-wrapper:hover,.guilds-wrapper:focus{max-width:100%;max-height:125px!important;transition:all 250ms linear;}
-.guilds-wrapper .scroller-wrap{padding-top:0;margin-top:0!important;width:100%;}
+.guilds-wrapper .scroller-wrap{margin-top:0px;padding-top:0;}
 .guilds-wrapper .scroller-wrap .guilds .guild:nth-child(1){position:relative;top:0;z-index:initial;}
+.guilds-wrapper .scroller-wrap{width:100%;}
 .guilds-wrapper .scroller-wrap .guilds{display:flex;overflow-y:hidden;overflow-x:scroll;padding:18px 0 10px 10px;}
 
 .guilds-wrapper .scroller::-webkit-scrollbar{height:14px;}
@@ -36,4 +43,4 @@
 
 .guilds-wrapper .new-messages-indicator{width:14px;height:14px;border-radius:16px;font-size:0;animation:newmessage 5s infinite;bottom:1px;transition:all 250ms linear;}
 .guilds-wrapper .new-messages-indicator > span{display:none;}
-.guilds-wrapper:hover .new-messages-indicator{animation:newmessageopen 5s infinite;width:50%;top:0;border-radius:16px;transition:all 250ms linear;}
+.guilds-wrapper:hover .new-messages-indicator{animation:newmessageopen 5s infinite;;width:99%;top:0;border-radius:16px;transition:all 250ms linear;left:.5%;height:12px;}
