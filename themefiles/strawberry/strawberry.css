@@ -296,7 +296,7 @@ background-image:url(https://cdn.rawgit.com/Kiwez/files/master/themefiles/icons/
 .status-picker .popout-menu-item .status-icon-text .status{margin-right:0px!important;border-radius:4px 0 0 4px;width:20px;height:20px;}
 .status-picker .popout-menu-item .status-icon-text .status-text{box-shadow:0 0 10px rgba(30,30,31,1);background-color:#2C2C2D;text-shadow:0 0 .5px White;padding:2px 6px;border-radius:0 4px 4px 0;}
 /********************************************************/
-.popout-bottom{left:80px!important;transform:none!important;overflow:visible!important;box-shadow:none;margin-top:0!important;}
+.popout-bottom{overflow:visible!important;box-shadow:none;}
 .popout-bottom .popout-menu{overflow:visible!important;box-shadow:none;background-color:transparent;padding:4px;}
 .popout-bottom .popout-menu .popout-menu-item{position:absolute;box-shadow:0 0 10px rgba(30,30,31,1);background-color:#2C2C2D;text-shadow:0 0 .5px White;padding:2px 6px;margin:10px 5px;border-radius:6px;}
 .popout-bottom .popout-menu .popout-menu-item{overflow:visible;animation-direction:normal;animation-duration:500ms;animation-fill-mode:forwards;animation-iteration-count:1;animation-play-state:running;opacity:0;visibility:hidden;}
