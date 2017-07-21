@@ -299,7 +299,7 @@ background-image:url(https://cdn.rawgit.com/Kiwez/files/master/themefiles/icons/
 .popout-bottom{left:80px!important;transform:none!important;overflow:visible!important;box-shadow:none;margin-top:0!important;}
 .popout-bottom .popout-menu{overflow:visible!important;box-shadow:none;background-color:transparent;padding:4px;}
 .popout-bottom .popout-menu .popout-menu-item{position:absolute;box-shadow:0 0 10px rgba(30,30,31,1);background-color:#2C2C2D;text-shadow:0 0 .5px White;padding:2px 6px;margin:10px 5px;border-radius:6px;}
-.popout-bottom .popout-menu .popout-menu-item{overflow:visible;animation-direction:normal;animation-duration:500ms;animation-fill-mode:forwards;animation-iteration-count:1;animation-play-state:running;opacity:0;}
+.popout-bottom .popout-menu .popout-menu-item{overflow:visible;animation-direction:normal;animation-duration:500ms;animation-fill-mode:forwards;animation-iteration-count:1;animation-play-state:running;opacity:0;visibility:hidden;}
 .popout-bottom .popout-menu .popout-menu-item:hover{opacity:1;background:#242425;}
 .popout-bottom .popout-menu .popout-menu-separator{display:none;}
 
@@ -311,28 +311,28 @@ background-image:url(https://cdn.rawgit.com/Kiwez/files/master/themefiles/icons/
 .popout-bottom .popout-menu .popout-menu-item:nth-child(9){animation-name:server-f;animation-delay:1600ms;}
 
 @keyframes server-a{
-0% {opacity:0;transform:translate(-110px,-20px);}
-100% {opacity:1;transform:translate(0px,0px);}}
+0% {opacity:0;transform:translate(0px,-20px);}
+100% {opacity:1;transform:translate(0px,0px);visibility:visible;}}
 
 @keyframes server-b{
-0% {opacity:0;transform:translate(-110px,-20px);}
-100% {opacity:1;transform:translate(0px,40px);}}
+0% {opacity:0;transform:translate(0px,-20px);}
+100% {opacity:1;transform:translate(0px,40px);visibility:visible;}}
 
 @keyframes server-c{
-0% {opacity:0;transform:translate(-110px,-20px);}
-100% {opacity:1;transform:translate(0px,80px);}}
+0% {opacity:0;transform:translate(0px,-20px);}
+100% {opacity:1;transform:translate(0px,80px);visibility:visible;}}
 
 @keyframes server-d{
-0% {opacity:0;transform:translate(-110px,-20px);}
-100% {opacity:1;transform:translate(0px,120px);}}
+0% {opacity:0;transform:translate(0px,-20px);}
+100% {opacity:1;transform:translate(0px,120px);visibility:visible;}}
 
 @keyframes server-e{
-0% {opacity:0;transform:translate(-110px,-20px);}
-100% {opacity:1;transform:translate(0px,160px);}}
+0% {opacity:0;transform:translate(0px,-20px);}
+100% {opacity:1;transform:translate(0px,160px);visibility:visible;}}
 
 @keyframes server-f{
-0% {opacity:0;transform:translate(-110px,-20px);}
-100% {opacity:1;transform:translate(0px,200px);}}
+0% {opacity:0;transform:translate(0px,-20px);}
+100% {opacity:1;transform:translate(0px,200px);visibility:visible;}}
 /********************************************************/
 @keyframes tooltipFade-right{
 	0%{margin-left:20px;}
