@@ -3,7 +3,7 @@
 .theme-dark .layers{background:transparent;}
 .theme-dark .layer{background:transparent;}
 .channels-wrap > div:nth-child(1) > div:nth-child(1) > div > header > span,.chat .content .channel-members-wrap > div > .channel-members > h2,.chat>.title-wrap>.title,.chat>.title-wrap>.topic{font-family:'Ranga'!important;}
-.chat>.title-wrap>.title{font-size:22px;}
+.chat>.title-wrap>.title{font-size:22px;text-transform:Capitalize!important;}
 .chat>.title-wrap>.topic{font-size:16px;}
 .channels-wrap > div:nth-child(1) > div:nth-child(1) > div > header > span{font-size:18px;}
 .chat .content .channel-members-wrap > div > .channel-members > h2{font-size:14px;}
