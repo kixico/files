@@ -116,13 +116,13 @@ background-image:url(https://cdn.rawgit.com/Kiwez/files/master/themefiles/icons/
 .chat .content{background-color:transparent!important;}
 .chat .content div .messages-wrapper{background-color:#3E3E3F;}
 .chat .content div form{border-top:0;}
-.chat .content div > form .channel-textarea{margin:10px 0;}
-.chat .content div > form .channel-textarea .channel-textarea-inner{}
-.chat .content div > form .channel-textarea .channel-textarea-inner .channel-textarea-upload{}
-.chat .content div > form .channel-textarea .channel-textarea-inner .channel-textarea-upload .file-input{}
-.chat .content div > form .channel-textarea .channel-textarea-inner textarea{}
-.chat .content div > form .channel-textarea .channel-textarea-inner .channel-textarea-emoji{}
-.chat .content div > form .channel-textarea .channel-textarea-inner .channel-textarea-emoji>.sprite-item{}
+.chat .content div > form > div{margin:10px 0;}
+.chat .content div > form > div > div{}
+.chat .content div > form > div > div .channel-textarea-upload{}
+.chat .content div > form > div > div .channel-textarea-upload .file-input{}
+.chat .content div > form > div > div > textarea{}
+.chat .content div > form  > div > div .channel-textarea-emoji{}
+.chat .content div > form  > div > div .channel-textarea-emoji>.sprite-item{}
 .chat .content div form .typing{pointer-events:none;padding:4px 0;background-color:transparent;bottom:initial;left:initial;left:-20px;direction:ltr;top:-30px;}
 .chat .content div form .typing > span{background-color:#2C2C2D;}
 .chat .content div form .typing .ellipsis{padding-right:2px;margin-top:0;padding-left:4px;padding-left:8px;}
@@ -260,6 +260,12 @@ background-image:url(https://cdn.rawgit.com/Kiwez/files/master/themefiles/icons/
 .ui-standard-sidebar-view .sidebar-region{background:#2C2C2D!important;}
 .ui-standard-sidebar-view .content-region{background:#3E3E3F!important;}
 /********************************************************/
+@keyframes tooltipFade-right{
+	0%{margin-left:20px;}
+	100%{margin-left:8px;}
+}
+.tooltip.tooltip-right{animation:tooltipFade-right 160ms;}
+/********************************************************/
 @keyframes statuschanger-o{
 0% {opacity:0;transform:translate(-120px,-125px);}
 100% {opacity:1;transform:translate(-90px,-165px);}}
@@ -303,44 +309,5 @@ background-image:url(https://cdn.rawgit.com/Kiwez/files/master/themefiles/icons/
 /********************************************************/
 .popout-bottom{overflow:visible!important;box-shadow:none;}
 .popout-bottom .popout-menu{margin-top:-10px!important;overflow:visible!important;box-shadow:none;background-color:transparent;padding:4px;}
-.popout-bottom .popout-menu .popout-menu-item{position:absolute;box-shadow:0 0 10px rgba(30,30,31,1);background-color:#2C2C2D;text-shadow:0 0 .5px White;padding:2px 6px;margin:10px 5px;border-radius:6px;}
-.popout-bottom .popout-menu .popout-menu-item{overflow:visible;animation-direction:normal;animation-duration:500ms;animation-fill-mode:forwards;animation-iteration-count:1;animation-play-state:running;opacity:0;visibility:hidden;}
-.popout-bottom .popout-menu .popout-menu-item:hover{opacity:1;background:#242425;}
-.popout-bottom .popout-menu .popout-menu-separator{display:none;}
-
-.popout-bottom .popout-menu .popout-menu-item:nth-child(1){animation-name:server-a;animation-delay:100ms;}
-.popout-bottom .popout-menu .popout-menu-item:nth-child(3){animation-name:server-b;animation-delay:300ms;}
-.popout-bottom .popout-menu .popout-menu-item:nth-child(4){animation-name:server-c;animation-delay:500ms;}
-.popout-bottom .popout-menu .popout-menu-item:nth-child(5){animation-name:server-d;animation-delay:700ms;}
-.popout-bottom .popout-menu .popout-menu-item:nth-child(7){animation-name:server-e;animation-delay:900ms;}
-.popout-bottom .popout-menu .popout-menu-item:nth-child(9){animation-name:server-f;animation-delay:1200ms;}
-
-@keyframes server-a{
-0% {opacity:0;transform:translate(0px,-20px);}
-100% {opacity:1;transform:translate(0px,0px);visibility:visible;}}
-
-@keyframes server-b{
-0% {opacity:0;transform:translate(0px,-20px);}
-100% {opacity:1;transform:translate(0px,40px);visibility:visible;}}
-
-@keyframes server-c{
-0% {opacity:0;transform:translate(0px,-20px);}
-100% {opacity:1;transform:translate(0px,80px);visibility:visible;}}
-
-@keyframes server-d{
-0% {opacity:0;transform:translate(0px,-20px);}
-100% {opacity:1;transform:translate(0px,120px);visibility:visible;}}
-
-@keyframes server-e{
-0% {opacity:0;transform:translate(0px,-20px);}
-100% {opacity:1;transform:translate(0px,160px);visibility:visible;}}
-
-@keyframes server-f{
-0% {opacity:0;transform:translate(0px,-20px);}
-100% {opacity:1;transform:translate(0px,200px);visibility:visible;}}
-/********************************************************/
-@keyframes tooltipFade-right{
-	0%{margin-left:20px;}
-	100%{margin-left:8px;}
-}
-.tooltip.tooltip-right{animation:tooltipFade-right 160ms;}
+.popout-bottom .popout-menu .popout-menu-item{/*position:absolute;*/box-shadow:0 0 10px rgba(30,30,31,1);background-color:#2C2C2D;text-shadow:0 0 .5px White;padding:2px 6px;margin:20px 5px;border-radius:6px;}
+.popout-bottom .popout-menu .popout-menu-item:hover{background:#2C2C2D;color:#fff;}
