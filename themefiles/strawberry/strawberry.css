@@ -2,6 +2,11 @@
 
 .theme-dark .layers{background:transparent;}
 .theme-dark .layer{background:transparent;}
+.channels-wrap > div:nth-child(1) > div:nth-child(1) > div > header > span,.chat .content .channel-members-wrap > div > .channel-members > h2,.chat>.title-wrap>.title,.chat>.title-wrap>.topic{font-family:'Ranga'!important;}
+.chat>.title-wrap>.title{font-size:22px;}
+.chat>.title-wrap>.topic{font-size:16px;}
+.channels-wrap > div:nth-child(1) > div:nth-child(1) > div > header > span{font-size:18px;}
+.chat .content .channel-members-wrap > div > .channel-members > h2{font-size:14px;}
 
 .titlebar{height:15px;}
 .titlebar .win-buttons	{height:56px;}
@@ -68,7 +73,7 @@
 .channels-wrap > div:nth-child(1) > div:nth-child(3) > div .containerDefault-7RImuF{}
 /*Channels:Text-Channels*/
 .channels-wrap > div:nth-child(1) > div:nth-child(3) > div .containerDefault-7RImuF .wrapperDefaultText-3M3F1R{}
-.channels-wrap > div:nth-child(1) > div:nth-child(3) > div .containerDefault-7RImuF .wrapperDefaultText-3M3F1R > div{}
+.channels-wrap > div:nth-child(1) > div:nth-child(3) > div .containerDefault-7RImuF .wrapperDefaultText-3M3F1R > div{text-transform:Capitalize!important;}
 /*Channels:Voice-Channels*/
 .channels-wrap > div:nth-child(1) > div:nth-child(3) > div .flex-lFgbSz .wrapperDefaultVoice-2ud9mj{}
 .channels-wrap > div:nth-child(1) > div:nth-child(3) > div .flex-lFgbSz .wrapperDefaultVoice-2ud9mj > div{}
@@ -209,6 +214,12 @@ background-image:url(https://cdn.rawgit.com/Kiwez/files/master/themefiles/icons/
 #autocomplete-popout [class*=scroller-],#user-profile-modal .scroller-wrap .guilds::-webkit-scrollbar-thumb{background-color:#1E1E1F!important;border-color:transparent!important;border:0px;border-radius:32px;}
 #autocomplete-popout [class*=scroller-],#user-profile-modal .scroller-wrap .guilds::-webkit-scrollbar-track-piece{background-color:#2C2C2D!important;border-color:transparent!important;border:0px;border-radius:0;}
 
+.scroller-wrap .scroller::-webkit-scrollbar{width:10px;}
+.scroller-wrap .scroller::-webkit-scrollbar-thumb{background-color:#1E1E1F!important;border-color:transparent!important;border:0px;border-radius:32px;}
+.scroller-wrap .scroller::-webkit-scrollbar-track-piece{background-color:#2C2C2D!important;border-color:transparent!important;border:0px;border-radius:0;}
+
+
+
 #user-profile-modal{box-shadow:0 0 10px rgba(30,30,31,1);}
 #user-profile-modal .header{background-color:#373738;background-image:none;}
 #user-profile-modal .header:after{background-image:none;}
@@ -259,13 +270,23 @@ background-image:url(https://cdn.rawgit.com/Kiwez/files/master/themefiles/icons/
 .ui-standard-sidebar-view{}
 .ui-standard-sidebar-view .sidebar-region{background:#2C2C2D!important;}
 .ui-standard-sidebar-view .content-region{background:#3E3E3F!important;}
-/********************************************************/
+/*Tooltips***********************************************/
 @keyframes tooltipFade-right{
 	0%{margin-left:20px;}
 	100%{margin-left:8px;}
 }
 .tooltip.tooltip-right{animation:tooltipFade-right 160ms;}
+/*Notifications******************************************/
+.notification-settings-modal.deprecated-settings-modal{}
+.notification-settings-modal.deprecated-settings-modal .settings-inner{background-color:#2C2C2D;color:#ccc;}
+.notification-settings-modal.deprecated-settings-modal .settings-actions{background-color:#2C2C2D;color:#ccc;}
+.theme-light .radio .radio-inner{background-color:#3E3E3F;border-color:#373738;border-radius:6px;}
+.radio .radio-inner span, .radio .radio-inner span:after{border-radius:4px;}
+.channel-notification-settings .content label{color:#ccc;}
 /********************************************************/
+.theme-light .radio .radio-inner span:after,.theme-light .radio:hover span:after{background-color:#3cb371!important;}
+.checkbox .checkbox-inner input[type=checkbox]:checked+span{background-color:#3cb371!important;border-color:#3cb371;}
+/*Status*************************************************/
 @keyframes statuschanger-o{
 0% {opacity:0;transform:translate(-120px,-125px);}
 100% {opacity:1;transform:translate(-90px,-165px);}}
