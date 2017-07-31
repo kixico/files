@@ -285,7 +285,7 @@ background-image:url(https://cdn.rawgit.com/Kiwez/files/master/themefiles/icons/
 .channel-notification-settings .content label{color:#ccc;}
 /********************************************************/
 .theme-light .radio .radio-inner span:after,.theme-light .radio:hover span:after{background-color:#3cb371!important;}
-.checkbox .checkbox-inner input[type=checkbox]:checked+span{background-color:#3cb371!important;border-color:#3cb371;}
+.checkbox .checkbox-inner input[type=checkbox]:checked+span{background-color:#3cb371!important;border-color:#3cb371!important;}
 /*Status*************************************************/
 @keyframes statuschanger-o{
 0% {opacity:0;transform:translate(-120px,-125px);}
