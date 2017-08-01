@@ -1,12 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Ranga');
+*{background-color:HotPink!important;background:HotPink!important;}
 
 .theme-dark .layers{background:transparent;}
 .theme-dark .layer{background:transparent;}
-.channels-wrap > div:nth-child(1) > div:nth-child(1) > div > header > span,.chat .content .channel-members-wrap > div > .channel-members > h2,.chat>.title-wrap>.title,.chat>.title-wrap>.topic{font-family:'Ranga'!important;}
-.chat>.title-wrap>.title{font-size:22px;text-transform:Capitalize!important;}
-.chat>.title-wrap>.topic{font-size:16px;}
-.channels-wrap > div:nth-child(1) > div:nth-child(1) > div > header > span{font-size:18px;}
-.chat .content .channel-members-wrap > div > .channel-members > h2{font-size:14px;}
 
 .titlebar{height:15px;}
 .titlebar .win-buttons	{height:56px;}
@@ -50,10 +45,15 @@
 .guilds-wrapper .guilds .guild.unread:before{box-shadow:inset 0 0 20px rgba(255,255,255,1);}
 .guilds-wrapper .guilds .guild.selected.unread:before{box-shadow:inset 0 0 20px rgba(236,195,67,1)}
 .guilds-wrapper .guilds .guild.selected:before{box-shadow:inset 0 0 20px rgba(87,208,141,1);}
-.guilds-wrapper .new-messages-indicator{color:transparent;border-radius:0;width:100%;left:0;height:6px;transition:all .2s;line-height:initial;}
+
+.guilds-wrapper .new-messages-indicator{opacity:1;z-index:10000;color:#fff;border-radius:0 0 6px 6px;width:90%;margin:0;left:5%;height:20px;line-height:initial;}
+.guilds-wrapper .new-messages-indicator.new-messages-indicator-guild.new-messages-indicator-mention.bottom{border-radius:6px 6px 0 0;}
+
+
+/*.guilds-wrapper .new-messages-indicator{color:transparent;border-radius:0;width:100%;left:0;height:6px;transition:all .2s;line-height:initial;}
 .guilds-wrapper .new-messages-indicator .icon.icon-unread-arrow{opacity:0;transition:opacity .2s;}
 .guilds-wrapper:hover .new-messages-indicator{color:#fff;opacity:1;height:20px;}
-.guilds-wrapper:hover .new-messages-indicator .icon.icon-unread-arrow{opacity:1;}
+.guilds-wrapper:hover .new-messages-indicator .icon.icon-unread-arrow{opacity:1;}*/
 
 
 
@@ -73,7 +73,7 @@
 .channels-wrap > div:nth-child(1) > div:nth-child(3) > div .containerDefault-7RImuF{}
 /*Channels:Text-Channels*/
 .channels-wrap > div:nth-child(1) > div:nth-child(3) > div .containerDefault-7RImuF .wrapperDefaultText-3M3F1R{}
-.channels-wrap > div:nth-child(1) > div:nth-child(3) > div .containerDefault-7RImuF .wrapperDefaultText-3M3F1R > div{text-transform:Capitalize!important;}
+.channels-wrap > div:nth-child(1) > div:nth-child(3) > div .containerDefault-7RImuF > div > div{text-transform:Capitalize!important;}
 /*Channels:Voice-Channels*/
 .channels-wrap > div:nth-child(1) > div:nth-child(3) > div .flex-lFgbSz .wrapperDefaultVoice-2ud9mj{}
 .channels-wrap > div:nth-child(1) > div:nth-child(3) > div .flex-lFgbSz .wrapperDefaultVoice-2ud9mj > div{}
