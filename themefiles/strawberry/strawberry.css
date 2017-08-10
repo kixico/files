@@ -170,7 +170,7 @@ background-image:url(https://cdn.rawgit.com/Kiwez/files/master/themefiles/icons/
 
 /********************************************************/
 #friends{background-color:#2C2C2D!important;}
-#friends .friends-header{background-color:#1E1E1F!important;}
+#friends .friends-header{background-color:var(--first-color)!important;}
 #friends .friends-table{background-color:#2C2C2D;}
 #friends .friends-table .friends-table-header{}
 #friends .friends-table .scroller-wrap{}
