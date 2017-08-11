@@ -1,20 +1,24 @@
+
 .theme-dark .layer{background-image:var(--background-image);}
 .guilds-wrapper{background:var(--first-color);}
-.channels-wrap{background-color:var(--second-color);}
 .channels-wrap > div:nth-child(1) > div:nth-child(1) > div > header{background-color:var(--first-color);}
+.channels-wrap .private-channels .search-bar{background-color:var(--first-color);}
+.chat .title-wrap{background:var(--first-color);}
+#friends .friends-header{background-color:var(--first-color)!important;}
+
+.chat .content .channel-members-wrap > div > .channel-members{background-color:var(--second-color);}
+.channels-wrap{background-color:var(--second-color);}
 .channels-wrap > div:nth-child(1){background:var(--second-color);}
 .channels-wrap .container-3lnMWU{background:var(--second-color);}
 .channels-wrap > div:last-child{background:var(--second-color);}
 .channels-wrap .private-channels{background-color:var(--second-color);}
-.channels-wrap .private-channels .search-bar{background-color:var(--first-color);}
 .chat{background-color:var(--second-color)!important;}
-.messages-wrapper .messages > div:not([class^="divider"]):nth-child(even){background-color:var(--fourth-color);}
 .chat .content div form .typing > span{background-color:var(--second-color);}
-.chat .content div .messages-wrapper{background-color:var(--third-color);}
-.chat .title-wrap{background:var(--first-color);}
-.chat .content .channel-members-wrap > div > .channel-members{background-color:var(--second-color);}
-#friends .friends-header{background-color:var(--first-color)!important;}
 .popout .userPopout-4pfA0d > div:nth-child(1) > div > div:nth-child(1) > div:nth-child(1){border-color:var(--second-color);}
+
+.chat .content div .messages-wrapper{background-color:var(--third-color);}
+
+.messages-wrapper .messages > div:not([class^="divider"]):nth-child(even){background-color:var(--fourth-color);}
 
 
 .theme-dark .layers{background:transparent;}
