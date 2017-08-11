@@ -13,6 +13,7 @@
 .channels-wrap > div:nth-child(1){background-color:var(--second-color)!important;}
 .channels-wrap .container-3lnMWU{background-color:var(--second-color)!important;}
 .channel-members-wrap .channel-members{background-color:var(--second-color);}
+.content form .typing{background-color:var(--second-color)!important;}
 
 .content .messages-wrapper{background-color:var(--third-color);}
 
@@ -51,6 +52,8 @@
 
 .content form{margin:0;padding:0 20px;}
 .content form > div{margin:13px 0;}
+.content form .typing{width:auto;pointer-events:none;padding:4px 8px 0 0;top:-44px;left:0;bottom:initial;border-top-right-radius:24px;}
+.content form .typing .ellipsis{margin-top:0;padding:0 2px 0 4px;}
 
 .comment .message .body > h2 .username-wrapper:after{padding:0 2px;border-radius:4px;color:#fff;margin-left:5px;text-shadow:0 0 4px #000;padding-bottom:1.5px;font-size:14px;}
 .chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="139995409631281152"] ~ .comment .message .body > h2 .username-wrapper:after{content:"greatwhite is my bitch";background-color:MediumSeaGreen;}
