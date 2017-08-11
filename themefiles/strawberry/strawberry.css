@@ -19,7 +19,6 @@
 
 .messages-wrapper .messages > div:not([class^="divider"]):nth-child(even){background-color:var(--fourth-color);}
 
-*{background-color:HotPink!important;background:HotPink!important;}
 
 .theme-dark .layers{background:transparent;}
 
