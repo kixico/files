@@ -1,4 +1,3 @@
-
 .theme-dark .layer{background-image:var(--background-image);}
 .guilds-wrapper{background:var(--first-color);}
 .channels-wrap > div:nth-child(1) > div:nth-child(1) > div > header{background-color:var(--first-color);}
@@ -20,6 +19,7 @@
 
 .messages-wrapper .messages > div:not([class^="divider"]):nth-child(even){background-color:var(--fourth-color);}
 
+*{background-color:HotPink!important;background:HotPink!important;}
 
 .theme-dark .layers{background:transparent;}
 
