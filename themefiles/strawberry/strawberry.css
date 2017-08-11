@@ -26,6 +26,8 @@
 .chat{background-color:transparent!important;}
 
 /***********************************/
+.titlebar{left:6%;width:94%;}
+
 .status-online{color:#43b581;}
 .status-idle{color:#faa61a;}
 .status-dnd{color:#f04747;}
