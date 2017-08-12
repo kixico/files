@@ -55,15 +55,19 @@
 .guilds-wrapper .guilds .dms .guild:nth-child(1){position:relative;top:0;}
 .guilds-wrapper .guilds .guild [style="border-radius: 25px; background-color: rgb(47, 49, 54);"]{background-color:transparent!important;}
 .guilds-wrapper .guilds .guild .guild-inner{background:none;}
+.guilds-wrapper .guilds .guild+.guild{margin-top:12px!important;}
 
 .channels-wrap{}
-.channels-wrap .container-3lnMWU{}
+.channels-wrap [class^=header]{border-bottom:0;}
+.channels-wrap .container-3lnMWU{border-bottom:0;}
 .channels-wrap .container-iksrDt{margin-bottom:0;height:70px;width:290px;margin-left:-70px;}
 .channel-members > h2{color:#b3b3b3!important;margin:29px 20px 10px;padding:0 0 2px 0;text-align:center;border-bottom:1px solid #b3b3b3;}
 
-.content form{margin:0;padding:0 20px;}
+.chat .title-wrap{border-bottom:0;}
+
+.content form{margin:0;padding:0 20px;border-top:0;}
 .content form > div{margin:13px 0;}
-.content form .typing{width:auto;pointer-events:none;padding:4px 8px 0 0;top:-42px;left:0;bottom:initial;border-top-right-radius:24px;}
+.content form .typing{width:auto;pointer-events:none;padding:4px 8px 0 0;top:-43px;left:0;bottom:initial;border-top-right-radius:24px;}
 .content form .typing .ellipsis{margin-top:0;padding:0 2px 0 4px;}
 
 .comment .message .body > h2 .username-wrapper:after{padding:0 2px;border-radius:4px;color:#fff;margin-left:5px;text-shadow:0 0 4px #000;padding-bottom:1.5px;font-size:14px;}
@@ -92,6 +96,9 @@ background:transparent;height:58px;width:58px;border-radius:25px;left:-4px;margi
 .scroller-wrap .scroller::-webkit-scrollbar-thumb{background-color:var(--first-color)!important;border-color:transparent!important;border:0px;border-radius:32px;}
 .scroller-wrap .scroller::-webkit-scrollbar-track-piece{background-color:transparent!important;border-color:transparent!important;border:0px;border-radius:0;}
 
+
+.new-messages-indicator{border-radius:4px;margin:1px 0;}
+.new-messages-indicator.bottom{border-radius:4px;}
 .tooltip{box-shadow:0 0 10px rgba(30,30,31,1);color:#fff;}
 
 /* SORT THROUGH - OLD CODE*/
