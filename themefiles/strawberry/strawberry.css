@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Ranga');
+
 .guilds-wrapper{background:var(--first-color);}
 .channels-wrap .private-channels .search-bar{background:var(--first-color);}
 #friends .friends-header{background-color:var(--first-color)!important;}
@@ -5,17 +7,24 @@
 .chat .title-wrap{background-color:var(--first-color);}
 .guilds-wrapper .guilds .guild .guild-inner{background-color:var(--first-color)!important;}
 .guilds-wrapper .guilds .guild .guild-inner a{background-color:var(--first-color);}
+.content form{background-color:var(--first-color);}
+.channels-wrap .container-iksrDt{background-color:var(--first-color)!important;}
+.guilds-wrapper .scroller-wrap{background-color:var(--first-color);}
+.channel-members-wrap:before{background-color:var(--first-color);}
+.channel-members-wrap:after{background-color:var(--first-color);}
 
-.content form{background-color:var(--second-color);}
-.channels-wrap .container-iksrDt{background-color:var(--second-color)!important;}
-
-.guilds-wrapper .scroller-wrap{background-color:var(--second-color);}
 .channels-wrap > div:nth-child(1){background-color:var(--second-color)!important;}
 .channels-wrap .container-3lnMWU{background-color:var(--second-color)!important;}
 .channel-members-wrap .channel-members{background-color:var(--second-color);}
 .content form .typing{background-color:var(--second-color)!important;}
 
 .content .messages-wrapper{background-color:var(--third-color);}
+
+.tooltip{background:var(--third-color);}
+.tooltip.tooltip-left:after{border-left-color:var(--third-color);}
+.tooltip.tooltip-right:after{border-right-color:var(--third-color);}
+.tooltip.tooltip-top:after{border-top-color:var(--third-color);}
+.tooltip.tooltip-bottom:after{border-bottom-color:var(--third-color);}
 
 
 .theme-dark .layers{background:none;}
@@ -54,12 +63,16 @@
 
 .content form{margin:0;padding:0 20px;}
 .content form > div{margin:13px 0;}
-.content form .typing{width:auto;pointer-events:none;padding:4px 8px 0 0;top:-44px;left:0;bottom:initial;border-top-right-radius:24px;}
+.content form .typing{width:auto;pointer-events:none;padding:4px 8px 0 0;top:-42px;left:0;bottom:initial;border-top-right-radius:24px;}
 .content form .typing .ellipsis{margin-top:0;padding:0 2px 0 4px;}
 
 .comment .message .body > h2 .username-wrapper:after{padding:0 2px;border-radius:4px;color:#fff;margin-left:5px;text-shadow:0 0 4px #000;padding-bottom:1.5px;font-size:14px;}
 .chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="139995409631281152"] ~ .comment .message .body > h2 .username-wrapper:after{content:"greatwhite is my bitch";background-color:MediumSeaGreen;}
+.chat .content .messages .message-group:last-child{padding-bottom:30px;}
 
+.channel-members-wrap{padding-bottom:70px;}
+.channel-members-wrap:before{content:"Version 2.1";position:absolute;right:0;bottom:0;height:70px;width:190px;font-family:'Ranga'!important;font-size:40px;line-height:70px;text-align:center;font-style:italic;}
+.channel-members-wrap:after{content:url(https://github.com/Kiwez/files/blob/master/img/strawberry.png?raw=true);position:absolute;bottom:0;height:70px;width:80px;font-family:'Ranga'!important;font-size:40px;line-height:80px;text-align:center;font-style:italic;}
 .channel-members-wrap .channel-members{}
 
 .guilds-wrapper .guilds .guild.unread:before,.guilds-wrapper .guilds .guild.selected.unread:before,.guilds-wrapper .guilds .guild.selected:before{
@@ -79,11 +92,7 @@ background:transparent;height:58px;width:58px;border-radius:25px;left:-4px;margi
 .scroller-wrap .scroller::-webkit-scrollbar-thumb{background-color:var(--first-color)!important;border-color:transparent!important;border:0px;border-radius:32px;}
 .scroller-wrap .scroller::-webkit-scrollbar-track-piece{background-color:transparent!important;border-color:transparent!important;border:0px;border-radius:0;}
 
-.tooltip{background:#373738;box-shadow:0 0 10px rgba(30,30,31,1);color:#fff;}
-.tooltip.tooltip-left:after{border-left-color:#373738;}
-.tooltip.tooltip-right:after{border-right-color:#373738;}
-.tooltip.tooltip-top:after{border-top-color:#373738;}
-.tooltip.tooltip-bottom:after{border-bottom-color:#373738;}
+.tooltip{box-shadow:0 0 10px rgba(30,30,31,1);color:#fff;}
 
 /* SORT THROUGH - OLD CODE*/
 .chat .content .channel-members-wrap > div > .channel-members .member:hover{background:rgba(30,30,31,0.3);}
