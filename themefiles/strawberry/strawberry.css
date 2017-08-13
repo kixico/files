@@ -9,7 +9,6 @@
 .guilds-wrapper .guilds .guild .guild-inner a{background-color:var(--first-color);}
 .content form{background-color:var(--first-color);}
 .channels-wrap .container-iksrDt{background-color:var(--first-color)!important;}
-.guilds-wrapper .scroller-wrap{background-color:var(--first-color);}
 .channel-members-wrap:before{background-color:var(--first-color);}
 .channel-members-wrap:after{background-color:var(--first-color);}
 
@@ -17,9 +16,9 @@
 .channels-wrap .container-3lnMWU{background-color:var(--second-color)!important;}
 .channel-members-wrap .channel-members{background-color:var(--second-color);}
 .content form .typing{background-color:var(--second-color)!important;}
+#friends {background-color:var(--second-color)!important;}
 
 .content .messages-wrapper{background-color:var(--third-color);}
-
 .tooltip{background:var(--third-color);}
 .tooltip.tooltip-left:after{border-left-color:var(--third-color);}
 .tooltip.tooltip-right:after{border-right-color:var(--third-color);}
@@ -29,9 +28,7 @@
 
 .theme-dark .layers{background:none;}
 .theme-dark .layer{background:none;}
-
 .channels-wrap{background:transparent;}
-#friends{background-color:transparent!important;}
 .chat{background-color:transparent!important;}
 
 /***********************************/
@@ -56,6 +53,20 @@
 .guilds-wrapper .guilds .guild [style="border-radius: 25px; background-color: rgb(47, 49, 54);"]{background-color:transparent!important;}
 .guilds-wrapper .guilds .guild .guild-inner{background:none;}
 .guilds-wrapper .guilds .guild+.guild{margin-top:12px!important;}
+.guilds-wrapper .guilds .guild{transition:all .3s;}
+.guilds-wrapper .guild:hover .guild:before{border-radius:15px;}
+.guilds-wrapper .guild:before{transition:all .3s!important;background:transparent!important;height:58px!important;width:58px!important;left:-4px!important;margin-top:-29px!important;}
+.guilds-wrapper .guilds .guild:hover:before{border-radius:15px!important;}
+.guilds-wrapper .guilds .guild.unread:before{border-radius:25px;}
+.guilds-wrapper .guilds .guild.selected.unread:before,
+.guilds-wrapper .guilds .guild.selected:before,
+.guilds-wrapper .guilds .guild:hover .guild-inner{border-radius:15px!important;}
+.guilds-wrapper .guilds .guild .guild-inner{transition:border-radius .3s;border-radius:25px!important;}
+.guilds-wrapper .guilds .guild.selected.unread .guild-inner,
+.guilds-wrapper .guilds .guild.selected .guild-inner{border-radius:15px!important;}
+.guilds-wrapper .guild.unread:before{box-shadow:inset 0 0 20px rgb(255,255,255);}
+.guilds-wrapper .guild.selected.unread:before{box-shadow:inset 0 0 20px rgb(236,195,67)}
+.guilds-wrapper .guild.selected:before{box-shadow:inset 0 0 20px rgb(87,208,141);}
 
 .channels-wrap{}
 .channels-wrap [class^=header]{border-bottom:0;}
@@ -79,15 +90,6 @@
 .channel-members-wrap:after{content:url(https://github.com/Kiwez/files/blob/master/img/strawberry.png?raw=true);position:absolute;bottom:0;height:70px;width:80px;font-family:'Ranga'!important;font-size:40px;line-height:80px;text-align:center;font-style:italic;}
 .channel-members-wrap .channel-members{}
 
-.guilds-wrapper .guilds .guild.unread:before,.guilds-wrapper .guilds .guild.selected.unread:before,.guilds-wrapper .guilds .guild.selected:before{
-background:transparent;height:58px;width:58px;border-radius:25px;left:-4px;margin-top:-29px;}
-.guilds-wrapper .guilds .guild:before{transition:all .3s;}
-.guilds-wrapper .guilds .guild:hover:before{border-radius:15px!important;}
-.guilds-wrapper .guilds .guild.selected:before{border-radius:15px!important;}
-.guilds-wrapper .guilds .guild.unread:before{box-shadow:inset 0 0 20px rgba(255,255,255,1);}
-.guilds-wrapper .guilds .guild.selected.unread:before{box-shadow:inset 0 0 20px rgba(236,195,67,1)}
-.guilds-wrapper .guilds .guild.selected:before{box-shadow:inset 0 0 20px rgba(87,208,141,1);}
-
 .chat .messages::-webkit-scrollbar{width:10px;}
 .chat .messages::-webkit-scrollbar-thumb{background-color:var(--first-color)!important;border-color:transparent!important;border:0px;border-radius:2em 2em 0 0;}
 .chat .messages::-webkit-scrollbar-track-piece{background-color:transparent!important;border-color:transparent!important;border:0px;border-radius:0;}
@@ -102,6 +104,11 @@ background:transparent;height:58px;width:58px;border-radius:25px;left:-4px;margi
 .new-messages-indicator{border-radius:4px;margin:1px 0;}
 .new-messages-indicator.bottom{border-radius:4px;}
 .tooltip{box-shadow:0 0 10px rgba(30,30,31,1);color:#fff;}
+
+#friends{}
+#friends .friends-table{background-color:transparent;}
+#friends .friends-table .friends-table-header{display:none;}
+
 
 /* SORT THROUGH - OLD CODE*/
 .chat .content .channel-members-wrap > div > .channel-members .member:hover{background:rgba(30,30,31,0.3);}
