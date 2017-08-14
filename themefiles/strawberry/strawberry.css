@@ -86,13 +86,13 @@
 .chat .content .messages .message-group:last-child{padding-bottom:30px;}
 
 
-.channel-members-wrap{padding-bottom:70px!important;}
-/*.channel-members-wrap:before{content:"Version 2.1";position:absolute;right:0;bottom:0;color:#72767d;height:70px;width:240px;font-family:'Ranga'!important;font-size:36px;line-height:70px;text-align:center;font-style:italic;}
-*/
+/*.channel-members-wrap{padding-bottom:70px!important;}
+.channel-members-wrap:before{content:"Version 2.1";position:absolute;right:0;bottom:0;color:#72767d;height:70px;width:240px;font-family:'Ranga'!important;font-size:36px;line-height:70px;text-align:center;font-style:italic;}
+
 .channel-members-wrap:before{content:"Version 2.1";position:absolute;right:0;bottom:0;height:70px;color:#72767d;width:190px;font-family:'Ranga'!important;font-size:40px;line-height:70px;text-align:center;font-style:italic;}
 .channel-members-wrap:after{content:url(https://github.com/Kiwez/files/blob/master/img/strawberry.png?raw=true);position:absolute;bottom:0;height:70px;width:80px;font-family:'Ranga'!important;font-size:40px;line-height:80px;text-align:center;font-style:italic;}
 .channel-members-wrap .channel-members{}
-
+*/
 .chat .messages::-webkit-scrollbar{width:10px;}
 .chat .messages::-webkit-scrollbar-thumb{background-color:var(--first-color)!important;border-color:transparent!important;border:0px;border-radius:2em 2em 0 0;}
 .chat .messages::-webkit-scrollbar-track-piece{background-color:transparent!important;border-color:transparent!important;border:0px;border-radius:0;}
