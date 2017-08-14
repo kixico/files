@@ -53,7 +53,7 @@
 .guilds-wrapper .guilds .guild [style="border-radius: 25px; background-color: rgb(47, 49, 54);"]{background-color:transparent!important;}
 .guilds-wrapper .guilds .guild .guild-inner{background:none;}
 .guilds-wrapper .guilds .guild+.guild{margin-top:12px!important;}
-.guilds-wrapper .guilds .guild{transition:all .3s;}
+.guilds-wrapper .guilds .guild{}
 .guilds-wrapper .guild:hover .guild:before{border-radius:15px;}
 .guilds-wrapper .guild:before{transition:all .3s!important;background:transparent!important;height:58px!important;width:58px!important;left:-4px!important;margin-top:-29px!important;}
 .guilds-wrapper .guilds .guild:hover:before{border-radius:15px!important;}
@@ -85,8 +85,11 @@
 .chat .content div .messages-wrapper div .messages .message-group .avatar-large[style*="139995409631281152"] ~ .comment .message .body > h2 .username-wrapper:after{content:"greatwhite is my bitch";background-color:MediumSeaGreen;}
 .chat .content .messages .message-group:last-child{padding-bottom:30px;}
 
-.channel-members-wrap{padding-bottom:70px;}
-.channel-members-wrap:before{content:"Version 2.1";position:absolute;right:0;bottom:0;height:70px;width:190px;font-family:'Ranga'!important;font-size:40px;line-height:70px;text-align:center;font-style:italic;}
+
+.channel-members-wrap{padding-bottom:70px!important;}
+/*.channel-members-wrap:before{content:"Version 2.1";position:absolute;right:0;bottom:0;color:#72767d;height:70px;width:240px;font-family:'Ranga'!important;font-size:36px;line-height:70px;text-align:center;font-style:italic;}
+*/
+.channel-members-wrap:before{content:"Version 2.1";position:absolute;right:0;bottom:0;height:70px;color:#72767d;width:190px;font-family:'Ranga'!important;font-size:40px;line-height:70px;text-align:center;font-style:italic;}
 .channel-members-wrap:after{content:url(https://github.com/Kiwez/files/blob/master/img/strawberry.png?raw=true);position:absolute;bottom:0;height:70px;width:80px;font-family:'Ranga'!important;font-size:40px;line-height:80px;text-align:center;font-style:italic;}
 .channel-members-wrap .channel-members{}
 
