@@ -249,7 +249,7 @@ input[type=checkbox]:checked,
 .buttonBrandFilledDefault-2Rs6u5:hover{opacity:.8;}
 
 /*Upload Modal*/
-.upload-modal .footer .button-primary{background-color:#fff;}
+.upload-modal .footer .button-primary{background-color:#fff!important;}
 
 /*Avatar Hover*/
 .message-group .avatar-large{transition:.3s;}
