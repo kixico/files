@@ -182,7 +182,9 @@ input[type=checkbox]:checked,
 
 .message-group .comment .markup pre code{background-color:rgba(46,49,54,1)!important;background-origin:content-box!important;line-height:1.5;padding:0px 8px 0 8px!important;}
 
-.message-group .comment .markup pre code:-webkit-any([class~="css" i],[class~="scss" i],[class~="js" i],[class~="javascript" i],[class~="jsx" i],[class~="html" i],[class~="xml" i],[class~="php" i],[class~="ruby" i],[class~="http" i],[class~="cs" i],[class~="json" i],[class~="swift" i],[class~="actionscript" i],[class~="apache" i],[class~="autohotkey" i],[class~="dos" i],[class~="lua" i],[class~="py" i],[class~="python" i]){background-image:linear-gradient(rgba(41,44,49,9) 50%,transparent 50%)!important;background-origin:padding-box!important;background-position:1em 1.5em!important;background-size:100% 3em!important;padding-top:20px!important;}
+.message-group .comment .markup pre code:-webkit-any([class~="css" i],[class~="scss" i],[class~="js" i],[class~="javascript" i],[class~="jsx" i],[class~="html" i],[class~="xml" i],[class~="php" i],[class~="ruby" i],[class~="http" i],[class~="cs" i],[class~="json" i],[class~="swift" i],[class~="actionscript" i],[class~="apache" i],[class~="autohotkey" i],[class~="dos" i],[class~="lua" i],[class~="py" i],[class~="python" i],[class~="ceylon" i],
+[class~="diff" i],[class~="django" i],[class~="dns" i],[class~="dockerfile" i],[class~="dsconfig" i],[class~="dts" i],[class~="dust" i],[class~="ebnf" i],[class~="elixir" i],[class~="elm" i],[class~="erb" i],[class~="delphi" i]
+){background-image:linear-gradient(rgba(41,44,49,9) 50%,transparent 50%)!important;background-origin:padding-box!important;background-position:1em 1.5em!important;background-size:100% 3em!important;padding-top:20px!important;}
 
 .message-group .comment .markup pre code:before{text-shadow:0 0 2px #000;;width:100%;height:20px;color:rgb(225,225,225);font-size:0.75rem;font-weight:800;text-indent:10px;border-radius:5px 5px 0 0;position:absolute;top:0;left:0;display:flex;align-items:center;}
 
@@ -256,7 +258,7 @@ input[type=checkbox]:checked,
 .message-group:hover .avatar-large{border-radius:10px;}
 
 /*User Popout*/
-.avatar-1BXaQj{position:static;}
+.userPopout-4pfA0d .avatar-1BXaQj{position:static;}
 .userPopout-4pfA0d .avatar-1BXaQj{border-width:0;}
 .userPopout-4pfA0d .status-3jUEha,
 .userPopout-4pfA0d .avatar-1BXaQj,
@@ -266,14 +268,14 @@ input[type=checkbox]:checked,
 .userPopout-4pfA0d:hover .avatar-1BXaQj,
 .userPopout-4pfA0d:hover .avatarHint-2i5XWK{border-radius:1em;}
 
-.status-3jUEha{bottom:initial;top:0;left:0;right:initial;width:100%;height:100%;background-color:transparent;border-width:4px;}
+.userPopout-4pfA0d .status-3jUEha{bottom:initial;top:0;left:0;right:initial;width:100%;height:100%;background-color:transparent;border-width:4px;}
 
 .userPopout-4pfA0d>div:nth-child(2) .member-roles .member-role{margin:4px;background-color:currentColor!important;border:0;z-index:1;}
 .userPopout-4pfA0d>div:nth-child(2) .member-roles .member-role .name{color:#fff;text-shadow:0 0 3px #000;}
 .userPopout-4pfA0d>div:nth-child(2) .member-roles .member-role .member-role-remove{filter:drop-shadow(0px 0px .5px #000);}
 .userPopout-4pfA0d>div:nth-child(2) .member-roles .member-role-add>button{filter:drop-shadow(0px 0px 1px #000);}
-.note textarea:focus{background:transparent;color:#fff;}
-.quick-message{color:#fff;}
+.userPopout-4pfA0d .note textarea:focus{background:transparent;color:#fff;}
+.userPopout-4pfA0d .quick-message{color:#fff;}
 
 /*RTC Connection*/
 #rtc-connection-popout{box-shadow:0 0 10px rgba(30,30,31,1);}
@@ -312,11 +314,51 @@ input[type=checkbox]:checked,
 
 
 /*Code Blocks*/
-.message-group .comment .markup pre .css:before{content:"CSS";background-color:#ffa500;}
+.message-group .comment .markup pre .css:before,.message-group .comment .markup pre .CSS:before{content:"CSS";background-color:#ffa500;}
 .message-group .comment .markup pre .js:before{content:"JS";background-color:#73879c;}
 .message-group .comment .markup pre .scss:before{content:"SCSS";background-color:#f6546a;}
-.message-group .comment .markup pre .jsx:before{content:"JSX";background-color:#20b2aa;}
+.message-group .comment .markup pre .jsx:before{content:"JSX";background-color:#66cdaa;}
 .message-group .comment .markup pre .javascript:before{content:"Javascript";background-color:#fa8072;}
-.message-group .comment .markup pre .cs:before{content:"CS";background-color:#66cdaa;}
+.message-group .comment .markup pre .cs:before{content:"CS";background-color:#20b2aa;}
 .message-group .comment .markup pre .html:before{content:"HTML";background-color:#468499;}
 .message-group .comment .markup pre .ruby:before{content:"Ruby";background-color:#990000;}
+.message-group .comment .markup pre .swift:before{content:"Swift";background-color:#fa8072;}
+
+.message-group .comment .markup pre .1c:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .abnf:before{content:"ABNF";background-color:#fa8072;}
+.message-group .comment .markup pre .accesslog:before{content:"Accesslog";background-color:#fa8072;}
+.message-group .comment .markup pre .actionscript:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .ada:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .apache:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .applescript:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .arduino:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .armasm:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .asciidoc:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .autoit:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .avrasm:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .aspectj:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .autohotkey:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .awk:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .axapta:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .bash:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .basic:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .bnf:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .brainfuck:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .cal:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .capnproto:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .ceylon:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .clojure-repl:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .clojure:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .cmake:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .coffeescript:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .coq:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .cos:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .cpp:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .crystal:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .c:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .csp:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .clean:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .crmsh:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .d:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .dart:before{content:"Swift";background-color:#fa8072;}
+.message-group .comment .markup pre .delphi:before{content:"Swift";background-color:#fa8072;}
