@@ -14,7 +14,15 @@ span:not(.channel-name):not(.spinner-item){backface-visibility:hidden;}
 	max-width:initial;
 	margin:0;}
 /*??? End section*/
-
+/*Poof*/
+/*Teal*/
+.friends-column-guilds div:nth-child(6),
+/*Dark .5*/
+#friends .friends-table .friends-row,
+/*Transparent*/
+.private-channels .channel:not(.btn-friends) a,
+#user-profile-modal .avatar-wrapper,
+/*End*/
 /*Cursivy Font*/
 .chat>.title-wrap.title-wrap-dark .channel-name, .chat>.title-wrap.title-wrap-dark .title.channel-group-dm-managed .channel-name, .chat>.title-wrap.title-wrap-dark .title.channel-group-dm .channel-name .input-autosize-inner .input-autosize-input,
 .channel-members h2,.name-3gtcmp{
@@ -24,16 +32,23 @@ span:not(.channel-name):not(.spinner-item){backface-visibility:hidden;}
 .nameSelectedText-32NDX5, .nameSelectedVoice-XpjYTw,
 .guilds-wrapper .guilds .friends-online,
 #friends .friends-header .tab-bar .tab-bar-item:hover,
-.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary.selected .badge,
+#friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary.selected .badge,
 #friends .friends-header .tab-bar .tab-bar-item.selected,
-.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary.selected,
-.selector-nbyEfM:hover div{
+#friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary.selected,
+.selector-nbyEfM:hover div,
+.popout-bottom .popout-menu .popout-menu-item div:hover,
+.popout-top-left .popout-menu-item:hover,
+.userPopout-4pfA0d .body-3rkFrF .bodyTitleText-hSiL7,
+.userPopout-4pfA0d .footer-2J5zqP .protip .tip,
+.userPopout-4pfA0d .body-3rkFrF .member-roles .member-role .named{
 	color:#fff!important;}
 
 /*Color CCC*/
 ::selection,
 .autocomplete-1TnWNR:hover [class*="contentTitle-"],
-.autocomplete-1TnWNR [class*="contentTitle-"]{
+.autocomplete-1TnWNR [class*="contentTitle-"],
+.popout-top-left .popout-menu-item,
+.popout-bottom .popout-menu .popout-menu-item div{
 	color:#ccc!important;}
 
 /*Color BBB*/
@@ -45,9 +60,17 @@ span:not(.channel-name):not(.spinner-item){backface-visibility:hidden;}
 	color:#bbb!important;}
 
 /*Text Shadow*/
-.nameSelectedText-32NDX5, .nameSelectedVoice-XpjYTw,.nameDefaultText-QoumjC, .nameDefaultVoice-1swZoh, .nameLockedText-2fGz07, .nameLockedVoice-wNOMNa{text-shadow:0 0 1px #000;}/*Dark Surround*/
+.nameSelectedText-32NDX5, .nameSelectedVoice-XpjYTw,
+.nameDefaultText-QoumjC, .nameDefaultVoice-1swZoh,
+.nameLockedText-2fGz07, .nameLockedVoice-wNOMNa,
+.userPopout-4pfA0d .footer-2J5zqP .protip{text-shadow:0 0 1px #000;}/*Dark Surround*/
+
 .classexample{text-shadow:0 0 1px #fff;}/*Light Surround*/
-.classexample{text-shadow:1px 1px 1px #000;}/*Dark Offset*/
+
+.userPopout-4pfA0d .body-3rkFrF .bodyTitleText-hSiL7d,
+.userPopout-4pfA0d .body-3rkFrF .member-roles .member-role .name,
+.userPopout-4pfA0d .footer-2J5zqP .protip .tip{text-shadow:1px 1px 1px #000;}/*Dark Offset*/
+
 .classexample{text-shadow:1px 1px 1px #fff;}/*Light Offset*/
 
 /*Transparent Background*/
@@ -532,12 +555,12 @@ span:not(.channel-name):not(.spinner-item){backface-visibility:hidden;}
 	padding:0 0 0 16px;
 }
 .chat form .typing{
-	bottom:60px;
+	bottom:65px;
 	width:auto;
 	direction:rtl;
-	right:10px;
+	right:0px;
 	left:initial;
-	margin-right:14px;
+	margin-right:10px;
 	pointer-events:none;
 }
 .autocomplete-1TnWNR{
@@ -586,7 +609,6 @@ span:not(.channel-name):not(.spinner-item){backface-visibility:hidden;}
 }
 .private-channels .channel:not(.btn-friends) a{
 	margin:0;
-	background-color:transparent!important;
 	padding:0 0 0 8px;
 	height:40px;
 }
@@ -659,7 +681,6 @@ span:not(.channel-name):not(.spinner-item){backface-visibility:hidden;}
 	justify-content:space-around;
 }
 #friends .friends-table .friends-row{
-	background:rgba(50, 51, 57, .5)!important;
 	flex-direction:column!important;
 	position:relative;
 	width:300px;
@@ -719,7 +740,7 @@ span:not(.channel-name):not(.spinner-item){backface-visibility:hidden;}
 .friends-column-guilds a:nth-child(3){left:44px;top:3px;}
 .friends-column-guilds a:nth-child(4){left:64px;bottom:7px;}
 .friends-column-guilds a:nth-child(5){left:84px;top:3px;}
-.friends-column-guilds div:nth-child(6){left:105px;bottom:15px;position:absolute;margin-left:0px!important;border:0!important;background-color:Teal;}
+.friends-column-guilds div:nth-child(6){left:105px;bottom:15px;position:absolute;margin-left:0px!important;border:0!important;}
 #friends .friends-table .friends-row .friends-column-guilds .avatar-small{
 	width:40px;
 	height:40px;
@@ -810,10 +831,6 @@ span:not(.channel-name):not(.spinner-item){backface-visibility:hidden;}
 .userPopout-4pfA0d .body-3rkFrF .bodyTitleIconForeground-itKW-t{
 	fill:#fff;
 }
-.userPopout-4pfA0d .body-3rkFrF .bodyTitleText-hSiL7d{
-	color:#fff;
-	text-shadow:1px 1px 1px #000;
-}
 .userPopout-4pfA0d .body-3rkFrF .member-roles{
 	padding:8px 10px;
 	margin:0;
@@ -822,8 +839,6 @@ span:not(.channel-name):not(.spinner-item){backface-visibility:hidden;}
 	background-color:currentColor!important;
 }
 .userPopout-4pfA0d .body-3rkFrF .member-roles .member-role .name{
-	color:#fff;
-	text-shadow:1px 1px 1px #000;
 	font-weight:600;
 }
 .userPopout-4pfA0d .footer-2J5zqP{
@@ -836,11 +851,6 @@ span:not(.channel-name):not(.spinner-item){backface-visibility:hidden;}
 .userPopout-4pfA0d .footer-2J5zqP .protip{
 	background-color:#7289da;
 	padding:4px 0;
-	text-shadow:0 0 1px #000;
-}
-.userPopout-4pfA0d .footer-2J5zqP .protip .tip{
-	text-shadow:1px 1px 1px #000;
-	color:#fff;
 }
 .userPopout-4pfA0d .body-3rkFrF .note{
 	padding:8px 10px;
@@ -902,7 +912,6 @@ span:not(.channel-name):not(.spinner-item){backface-visibility:hidden;}
 	background-color:#fff;
 }
 #user-profile-modal .avatar-wrapper{
-	background-color:transparent;
 	top:15px;
 }
 #user-profile-modal .avatar-wrapper .avatar-profile{
@@ -1008,12 +1017,8 @@ span:not(.channel-name):not(.spinner-item){backface-visibility:hidden;}
 	width:100%;
 }
 .popout-bottom .popout-menu .popout-menu-item div{
-	color:#ccc;
 	display:inline-block;
 	flex:0 1;
-}
-.popout-bottom .popout-menu .popout-menu-item div:hover{
-	color:#fff;
 }
 .popout-bottom .popout-menu .popout-menu-item-label{
 	font-weight:600;
@@ -1044,12 +1049,8 @@ span:not(.channel-name):not(.spinner-item){backface-visibility:hidden;}
 }
 .popout-top-left .popout-menu-item{
 	margin:2px;
-	color:#ccc;
 	border-radius:3px;
 	visibility:hidden;
-}
-.popout-top-left .popout-menu-item:hover{
-	color:#fff;
 }
 .popout-top-left .status-icon-text{
 	font-weight:600;
