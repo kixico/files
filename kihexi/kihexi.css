@@ -40,7 +40,11 @@ box-sizing:border-box!important;}
 .message-group .comment .markup code.inline,
 .message-group .comment .markup pre code,
 #friends,
+.friends-table .messages .message-group-blocked .message-group-blocked-btn,
+.messages-wrapper .messages .message-group-blocked .message-group-blocked-btn,
 .private-channels .channel.btn-friends a,
+.friends-table .messages .message-group-blocked .message-group-blocked-btn:hover,
+.messages-wrapper .messages .message-group-blocked .message-group-blocked-btn:hover,
 .ui-video{background-color:transparent!important;}
 
 .layers,
@@ -71,11 +75,13 @@ box-sizing:border-box!important;}
 .context-menu .item:hover,
 .chat .has-more button,
 .chat .jump-to-present-bar,
+.message-group-blocked,
+
 .messages-wrapper{background:rgba(50, 51, 57, .5)!important;}
 
 .context-menu,
 .autocomplete-1TnWNR,
-.theme-dark .chat .jump-to-present-bar:hover,
+.chat .jump-to-present-bar:hover,
 .context-menu .item-subMenu{background:rgba(50, 51, 57, .8)!important;}
 
 .layers>.layer{
