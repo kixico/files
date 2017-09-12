@@ -13,7 +13,7 @@ box-sizing:border-box!important;}
 /*Misc*/
 .chat>.title-wrap.title-wrap-dark .channel-name, .chat>.title-wrap.title-wrap-dark .title.channel-group-dm-managed .channel-name, .chat>.title-wrap.title-wrap-dark .title.channel-group-dm .channel-name .input-autosize-inner .input-autosize-input,
 .channel-members h2,.name-3gtcmp{
-	font-family:'Ranga';
+	font-family:'Ranga', arial;
 }
 .channel-members h2{font-size:14px;}
 .name-3gtcmp{font-size:18px;}
