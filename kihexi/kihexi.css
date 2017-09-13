@@ -32,7 +32,8 @@ span:not(.channel-name):not(.spinner-item){backface-visibility:hidden;}
 .popout-top-left .popout-menu-item:hover,
 .userPopout-4pfA0d .body-3rkFrF .bodyTitleText-hSiL7,
 .userPopout-4pfA0d .footer-2J5zqP .protip .tip,
-.userPopout-4pfA0d .body-3rkFrF .member-roles .member-role .name{
+.userPopout-4pfA0d .body-3rkFrF .member-roles .member-role .name,
+.userPopout-4pfA0d .body-3rkFrF .bodyTitleText-hSiL7d{
 	color:#fff!important;}
 
 /*Color CCC*/
@@ -66,8 +67,6 @@ span:not(.channel-name):not(.spinner-item){backface-visibility:hidden;}
 .contentHoveredText-2HYGIY div{
 	opacity:1!important;
 }
-
-/*TEAL TEXT ON HOVER GET BRIGHTER*/
 
 /*Color BBB*/
 .selector-nbyEfM div{
@@ -226,12 +225,13 @@ span:not(.channel-name):not(.spinner-item){backface-visibility:hidden;}
 .status-streaming,[class*="statusstreaming" i]{color:#593695;}
 
 @keyframes tooltip-width{
-	0%{transform:scale(.1);}
-	100%{transform:scale(1);}
+	0%{transform:scale(.1);font-size:10px;}
+	100%{transform:scale(1);font-size:12px;}
 }
 .tooltip{
 	animation:tooltip-width .05s linear forwards;
-	padding:4px 6px;
+	padding:4px 6px 4px 6px;
+	border-radius:3px;
 }
 .tooltip.tooltip-black.tooltip-top:after{border-top-color:rgba(0, 128, 128, 0.5)!important;}
 .tooltip.tooltip-black.tooltip-right:after{border-right-color:rgba(0, 128, 128, 0.5)!important;}
@@ -243,8 +243,8 @@ span:not(.channel-name):not(.spinner-item){backface-visibility:hidden;}
 .theme-dark .friends-table .scroller-wrap ::-webkit-scrollbar-track-piece, .theme-dark .messages-wrapper .scroller-wrap ::-webkit-scrollbar-track-piece{border-radius:0;border:0;background-color:rgba(50, 51, 57, .5);}
 /*Guilds Bar*/
 .guilds-wrapper{
-	width:62px;
-	padding:0 0 44px 0;
+	width:72px;
+	padding:0 10px 44px 0;
 }
 .guilds-wrapper .guilds .friends-icon{
 	width:46px;
@@ -434,7 +434,7 @@ span:not(.channel-name):not(.spinner-item){backface-visibility:hidden;}
 .guilds-wrapper .dms:hover{
 	display:flex;
 	flex-direction:column;
-	margin-bottom:10px;
+	margin-bottom:0px;
 	clip-path:initial!important;
 	width:62px;
 	min-height:46px;
@@ -443,6 +443,7 @@ span:not(.channel-name):not(.spinner-item){backface-visibility:hidden;}
 	background-color:transparent;
 	padding:0;
 	background-image:none;
+	z-index:-1;
 }
 .guilds-wrapper .dms>.guild:nth-child(even){
 	margin-left:20px;
