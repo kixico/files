@@ -82,7 +82,8 @@ span:not(.channel-name):not(.spinner-item){backface-visibility:hidden;}
 
 .userPopout-4pfA0d .body-3rkFrF .bodyTitleText-hSiL7d,
 .userPopout-4pfA0d .body-3rkFrF .member-roles .member-role .name,
-.userPopout-4pfA0d .footer-2J5zqP .protip .tip{text-shadow:1px 1px 1px #000;}/*Dark Offset*/
+.userPopout-4pfA0d .footer-2J5zqP .protip .tip,
+.name-2SL4ev{text-shadow:1px 1px 1px #000;}/*Dark Offset*/
 
 .classexample{text-shadow:1px 1px 1px #fff;}/*Light Offset*/
 
@@ -1056,7 +1057,6 @@ span:not(.channel-name):not(.spinner-item){backface-visibility:hidden;}
 }
 .popout-bottom .popout-menu .popout-menu-item div{
 	display:inline-block;
-	flex:0 1;
 }
 .popout-bottom .popout-menu .popout-menu-item-label{
 	font-weight:600;
