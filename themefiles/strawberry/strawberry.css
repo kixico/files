@@ -454,7 +454,7 @@ span:not(.channel-name):not(.spinner-item){
 .popout{
 	box-shadow:0 2px 4px rgba(0,0,0,.16);
 }
-.popout-bottom:not(.no-shadow){
+.popout-bottom:not(.no-shadow,.no-arrow){
 	transform:translateY(0%) translateX(-50%) translateZ(0px)!important;
 	left:190px!important;
 	top:54px!important;
