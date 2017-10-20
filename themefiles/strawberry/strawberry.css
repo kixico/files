@@ -163,7 +163,7 @@ span:not(.channel-name):not(.spinner-item){
 }
 /*Message Group*/
 .message-group:last-of-type{
-	padding-bottom:26px;
+	padding-bottom:14px;
 }
 .embed,
 .embed-color-pill{
