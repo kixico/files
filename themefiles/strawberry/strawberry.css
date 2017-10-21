@@ -20,11 +20,11 @@ span:not(.channel-name):not(.spinner-item){
 /*		Guild Bar						*/
 /* ••·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
 /*Theme Dark*/
-.theme-dark .guilds-wrapper .guilds>.guild:first-child .guild-inner{
-	background-color:#282b30!important;
+.theme-dark .guilds-wrapper .guilds>.guild:first-child .guild-inner[style]{
+	background-color:#282b30;
 }
-.theme-dark .guilds-wrapper .guilds>.guild:hover:first-child .guild-inner{
-	background-color:rgb(114,137,218)!important;
+.theme-dark .guilds-wrapper .guilds>.guild:hover:first-child .guild-inner[style]{
+	background-color:rgb(114,137,218);
 }
 /*Guilds Wrap*/
 .guilds-wrapper .scroller-wrap{
@@ -48,7 +48,6 @@ span:not(.channel-name):not(.spinner-item){
 .guilds-wrapper .guilds>.guild:first-child .guild-inner{
 	border-radius:0!important;
 	box-shadow:none;
-	transition:background-color .4s ease;
 }
 .guilds-wrapper .guilds>.guild:first-child *:not(.badge){width:inherit;height:inherit;}
 .guilds-wrapper .guilds>.guild:first-child .guild-inner a{
@@ -460,7 +459,7 @@ span:not(.channel-name):not(.spinner-item){
 .popout{
 	box-shadow:0 2px 4px rgba(0,0,0,.16);
 }
-.popout-bottom:not(.no-shadow,.no-arrow){
+.popout.popout-bottom:not(.no-shadow,.no-arrow){
 	transform:translateY(0%) translateX(-50%) translateZ(0px)!important;
 	left:190px!important;
 	top:54px!important;
