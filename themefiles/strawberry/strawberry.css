@@ -2,8 +2,10 @@
 /*		Uni						*/
 /* ••·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
 *{
-	/*box-sizing:border-box;*/
+	/*box-sizing:border-box;
+	border-radius: 0 !important;*/
 }
+
 body,
 span:not(.channel-name):not(.spinner-item){
 	backface-visibility:hidden;
@@ -28,8 +30,8 @@ span:not(.channel-name):not(.spinner-item){
 }
 /*Guilds Wrap*/
 .guilds-wrapper .scroller-wrap{
-	top:56px;
-	max-height:calc(100% - 56px);
+	top:48px;
+	max-height:calc(100% - 48px);
 }
 .guilds-wrapper .guilds{
 	padding:4px 0 14px 10px;
@@ -37,11 +39,11 @@ span:not(.channel-name):not(.spinner-item){
 /*Direct Messages*/
 .guilds-wrapper .guilds>.guild:first-child{
 	position:absolute;
-	top:-56px;
+	top:-48px;
 	left:0;
 	margin:0 auto;
 	width:70px;
-	height:55px;
+	height:48px;
 	border-bottom:1px solid rgba(0,0,0,.2);
 	box-shadow:0 1px 0 rgba(0,0,0,.06);
 }
@@ -126,6 +128,7 @@ span:not(.channel-name):not(.spinner-item){
 /*Notice*/
 
 /*Channels*/
+
 
 .content-2mSKOj{
 	border-radius:0;
@@ -283,6 +286,11 @@ span:not(.channel-name):not(.spinner-item){
 /*		Friends Section						*/
 /* ••·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
 /*Theme Dark*/
+
+/*Friends*/
+#friends{
+	z-index:1;
+}
 
 /*Search bar*/
 .search-bar{
@@ -455,14 +463,18 @@ span:not(.channel-name):not(.spinner-item){
 	color:rgb(190,190,190);
 }
 
+.theme-dark .search-results-wrap .search-result .hit{
+	background-color:rgb(60,60,70);
+}
+
 /*Popouts*/
 .popout{
 	box-shadow:0 2px 4px rgba(0,0,0,.16);
 }
-.popout.popout-bottom:not(.no-shadow,.no-arrow){
+.popout.popout-bottom:not(.no-shadow){
 	transform:translateY(0%) translateX(-50%) translateZ(0px)!important;
 	left:190px!important;
-	top:54px!important;
+	top:60px!important;
 	width:216px!important;
 }
 .popout-menu{
@@ -505,6 +517,11 @@ span:not(.channel-name):not(.spinner-item){
 	display:none;
 }
 
+#app-mount .search-results-wrap .search-result .search-result-message{
+	border-radius:0;
+	border:0;
+}
+
 /*Privacy Settings*/
 .modal-3HOjGZ{
 	border-radius:0;
@@ -531,6 +548,18 @@ span:not(.channel-name):not(.spinner-item){
 	display:none;
 }
 #instant-invite-modal [class*=form-]{
+	border-radius:0;
+}
+
+/*Notification Settings*/
+.item-2zi_5J{
+	border-radius:0;
+	padding:4px 4px!important;
+}
+.box-XhjOl4{
+	border-radius:50%;
+}
+.card-3DrRmC{
 	border-radius:0;
 }
 /* ••·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
