@@ -471,11 +471,15 @@ span:not(.channel-name):not(.spinner-item){
 .popout{
 	box-shadow:0 2px 4px rgba(0,0,0,.16);
 }
-.popout.popout-bottom:not(.no-shadow){
+.popout.popout-bottom:not(.no-arrow){
 	transform:translateY(0%) translateX(-50%) translateZ(0px)!important;
 	left:190px!important;
 	top:60px!important;
 	width:216px!important;
+}
+.popout.popout-bottom.no-shadow{
+	right:3%!important;
+	left:initial!important;
 }
 .popout-menu{
 	border-radius:0;
