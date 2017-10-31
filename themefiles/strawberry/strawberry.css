@@ -682,15 +682,11 @@ span:not(.channel-name):not(.spinner-item){
 .popout{
 	box-shadow:0 2px 4px rgba(0,0,0,.16);
 }
-.popout.popout-bottom:not(.no-arrow){
+.popout.popout-bottom:not(.no-arrow):not(.no-shadow){
 	transform:translateY(0%) translateX(-50%) translateZ(0px)!important;
 	left:190px!important;
 	top:50px!important;
 	width:216px!important;
-}
-.popout.popout-bottom.no-shadow{
-	right:3%!important;
-	left:initial!important;
 }
 .popout-menu{
 	border-radius:0;
@@ -795,7 +791,8 @@ span:not(.channel-name):not(.spinner-item){
 /*		User Settings						*/
 /* ••·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
 /*Theme Dark*/
-.theme-dark [layer-id="user-settings"]{
+.theme-dark [layer-id="user-settings"],
+.theme-dark [layer-id="server-settings"]{
 	background:transparent;
 }
 .theme-dark .ui-standard-sidebar-view .sidebar-region{
@@ -804,23 +801,25 @@ span:not(.channel-name):not(.spinner-item){
 .theme-dark .ui-standard-sidebar-view .content-region{
 	background-color:var(--settings-right);
 }
-.theme-dark .ui-standard-sidebar-view .content-region-scroller .tools .btn-close{
+.theme-dark .tools .btn-close{
 	background-color:var(--bar-color);
 }
-.theme-dark .content-region-scroller .tools{
+.theme-dark .content-region-scroller .tools,
+.theme-dark .content-region > .tools{
 	background-color:var(--bar-color);
 }
-.theme-dark .ui-standard-sidebar-view .content-region-scroller .tools .esc-text{
+.theme-dark .ui-standard-sidebar-view .content-region-scroller .tools .esc-text,
+.theme-dark .content-region > .tools .esc-text{
 	background-color:var(--bar-color);
 }
-.theme-dark .ui-standard-sidebar-view .content-region-scroller .tools .btn-close:hover{
+.theme-dark .content-region .tools .btn-close:hover{
 	background-color:#f04747;
 }
 .theme-dark .cardPrimaryOutline-2YyAz2{
 	background-color:rgba(32,34,37,.3);
 }
 
-#app-mount [layer-id="user-settings"]{
+#app-mount .layer ~ .layer{
 	background:transparent;
 	top:10%;
 	bottom:10%;
@@ -852,7 +851,7 @@ span:not(.channel-name):not(.spinner-item){
 .ui-standard-sidebar-view .content-column, .ui-standard-sidebar-view .custom-column{
 	max-width:initial;
 }
-#app-mount .content-region-scroller .tools{
+#app-mount .content-region .tools{
 	position:absolute;
 	top:-22px;
 	left:0;
@@ -862,7 +861,10 @@ span:not(.channel-name):not(.spinner-item){
 	width:auto;
 	height:22px;
 }
-#app-mount .ui-standard-sidebar-view .content-region-scroller .tools .btn-close{
+#app-mount .content-region > .tools{
+	top:0;
+}
+#app-mount .content-region .tools .btn-close{
 	position:relative;
 	height:18px;
 	border:0;
@@ -871,10 +873,10 @@ span:not(.channel-name):not(.spinner-item){
 	height:22px;
 	float:right;
 }
-#app-mount .content-region-scroller .tools .btn-close:hover ~ .esc-text:after{
+#app-mount .content-region .tools .btn-close:hover ~ .esc-text:after{
 	content:"Close Settings";
 }
-.ui-standard-sidebar-view .content-region-scroller .tools .esc-text{
+#app-mount .content-region .tools .esc-text{
 	position:absolute;
 	margin:0;
 	height:22px;
@@ -882,7 +884,7 @@ span:not(.channel-name):not(.spinner-item){
 	font-size:0;
 	left:-222px;
 }
-.ui-standard-sidebar-view .content-region-scroller .tools .esc-text:after{
+#app-mount .content-region .tools .esc-text:after{
 	content:"Discord Settings";
 	position:absolute;
 	top:0;
@@ -1009,3 +1011,4 @@ span:not(.channel-name):not(.spinner-item){
 div.guild[separator]:after{
 	background-color:rgba(45,45,50)!important;
 }
+
