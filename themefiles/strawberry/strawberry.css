@@ -271,6 +271,7 @@ span:not(.channel-name):not(.spinner-item){
 	background-repeat:no-repeat;
 	background-position:center;
 	margin:auto;
+	border-radius:3px 0 0 3px;
 }
 .container-iksrDt .status{
 	height:inherit;
@@ -279,6 +280,7 @@ span:not(.channel-name):not(.spinner-item){
 	bottom:6px;
 	height:40px;
 	margin:auto 0;
+	border-radius:0 3px 3px 0;
 }
 /* ••·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
 /*		Chat Main						*/
