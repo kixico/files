@@ -240,21 +240,10 @@ span:not(.channel-name):not(.spinner-item){
 /*Account*/
 .container-iksrDt{
 	position:relative;
-	/*transform:translateX(-70px);
-	width:calc(100% + 70px);*/
 	margin-bottom:0;
 	padding-left:0;
 	box-sizing:border-box;
 }
-/*.container-iksrDt:after{
-	content:"";
-	position:absolute;
-	left:310px;
-	width:calc(100% + 550px);
-	height:52px;
-	z-index:1;
-	pointer-events:none;
-}*/
 .container-iksrDt .avatar-small{
 	width:70px;
 	background-size:0;
@@ -388,19 +377,9 @@ span:not(.channel-name):not(.spinner-item){
 	border-radius:0;
 }
 .chat .content form .typing{
-	position:absolute;
-	bottom:45px;
-	left:5px;
-	width:auto;
-	margin:auto;
 	justify-content:center;
-	align-items:center;
-	padding:0 4px;
-	display:inline-flex;
-	border-radius:5px;
 	pointer-events:none;
-	flex-direction:row;
-	overflow:visible;
+	bottom:0;
 }
 /* ••·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
 /*		Channel Members						*/
