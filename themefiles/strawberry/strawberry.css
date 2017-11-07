@@ -74,11 +74,23 @@ span:not(.channel-name):not(.spinner-item){
 .theme-dark .scrollerWrap-2uBjct .scroller-fzNley::-webkit-scrollbar-thumb,
 .theme-light .scrollerThemed-19vinI.themeDark-BdSAwu .scroller-fzNley::-webkit-scrollbar-thumb{
 	border-radius:0;
-	border:1px solid rgba(35,35,35,.5);
+	border:1px solid rgba(35,35,35,0);
 }
 .theme-dark .friends-table .scroller-wrap::-webkit-scrollbar-track-piece,
 .theme-dark .messages-wrapper .scroller-wrap::-webkit-scrollbar-track-piece{
-	background-color:rgba(50,50,50,.3);
+	background-color:rgba(50,50,50,1);
+}
+
+.theme-dark .messages-wrapper .scroller-wrap ::-webkit-scrollbar-track-piece{
+	background:unset;
+	border:0;
+}
+
+#app-mount .messages.scroller::-webkit-scrollbar-thumb{
+	background-color:var(--form);
+	border-style:solid;
+	border-width:1px 0 1px 1px;
+	border-color:var(--header-bar);
 }
 /*Buttons*/
 .theme-dark .buttonBrandFilled-3Mv0Ra,
