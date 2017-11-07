@@ -18,6 +18,16 @@
 	--settings-right:rgb(40,40,50);
 }
 
+
+/* ••·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
+/*		Uni						*/
+/* ••·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
+*{
+	/*box-sizing:border-box;
+	border-radius:0!important;*/
+}
+
+
 body,
 span:not(.channel-name):not(.spinner-item){
 	backface-visibility:hidden;
@@ -82,7 +92,9 @@ span:not(.channel-name):not(.spinner-item){
 	background-color:var(--buttons)!important;
 	border-color:var(--buttons)!important;
 }
-
+/* ••·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
+/*		Guild Bar						*/
+/* ••·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
 /*Theme Dark*/
 .theme-dark .guilds-wrapper{
 	background-color:var(--guild-bar);
@@ -436,6 +448,9 @@ span:not(.channel-name):not(.spinner-item){
 	z-index:1;
 	position:static;
 	box-shadow:none;
+}
+.chat .content form [class*="channelTextAreaDisabled"]{
+	opacity:1;
 }
 .chat .content form [class*=channelTextArea-]{
 	padding:4px 4px;
@@ -952,11 +967,12 @@ span:not(.channel-name):not(.spinner-item){
 .popout{
 	box-shadow:0 2px 4px rgba(0,0,0,.16);
 }
-.popout.popout-bottom:not(.no-arrow):not(.no-shadow){
+.popout.popout-bottom[style*="top: 60px"]{
 	transform:translateY(0%) translateX(-50%) translateZ(0px)!important;
 	left:190px!important;
 	top:50px!important;
 	width:216px!important;
+	margin-top:18px;
 }
 .popout-menu{
 	border-radius:0;
@@ -1334,6 +1350,7 @@ span:not(.channel-name):not(.spinner-item){
 	opacity:1!important;
 	transform:scale(1)!important;
 	filter:blur(5px);
+	pointer-events:none;
 }
 .formNotice-2tZsrh{
 	padding:10px;
