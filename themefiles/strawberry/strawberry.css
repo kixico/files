@@ -522,7 +522,9 @@ span:not(.channel-name):not(.spinner-item){
 .channel-members-wrap > div > div > *{
 	direction:ltr;
 }
-
+.mask-2vyqAW{
+	-webkit-mask:initial;
+}
 .channel-members .member.popout-open,
 .channel-members .member{
 	padding:3px 4px 3px 6px;
@@ -550,8 +552,12 @@ span:not(.channel-name):not(.spinner-item){
 	left:0;
 	right:0;
 	height:2px;
-	background-color:#fff;
+	background-color:rgba(255,255,255,.3);
 	transition:150ms top ease-out;
+}
+.channel-members .member.popout-open .member-username-inner:after,
+.channel-members .member:hover .member-username-inner:after{
+	background-color:rgba(255,255,255,1);
 }
 .channel-members .member.popout-open .member-username-inner:after,
 .channel-members .member:hover .member-username-inner:after{
@@ -731,27 +737,23 @@ span:not(.channel-name):not(.spinner-item){
 	right:0;
 	transform:initial!important;
 	pointer-events:none;
+	display:flex;
+	justify-content:center;
+	align-items:center;
 }
 #app-mount .userPopout-4pfA0d{
 	border-radius:0;
 	position:absolute;
-	top:0;
-	bottom:0;
-	left:0;
-	right:0;
-	margin:auto;
-	height:400px;
 	pointer-events:auto;
 	width:280px;
-	background:linear-gradient(to top, var(--popout-color-1) 170px, var(--popout-color-2) 140px);
-	box-shadow:20px 20px 30px 0px rgba(0,0,0,.2);
 	overflow:initial;
+	/*Use a before and after to divide the colors. Not linear gradient?*/
 }
 .userPopout-4pfA0d:before{
 	content:"";
 	position:absolute;
 	top:159px;
-	bottom:60px;
+	height:70px;
 	left:0;
 	right:0;
 	margin:auto;
@@ -759,10 +761,10 @@ span:not(.channel-name):not(.spinner-item){
 	border-top:1px solid rgba(255,255,255,.2);
 }
 .theme-dark .header-3mZJcV{
-	background:transparent;
+	background:var(--popout-color-2);
 }
 .theme-dark .body-3rkFrF{
-	background:transparent;
+	background:var(--popout-color-1);
 }
 .theme-dark .footer-2J5zqP{
 	background:transparent;
@@ -834,13 +836,18 @@ span:not(.channel-name):not(.spinner-item){
 }
 .userPopout-4pfA0d .body-3rkFrF{
 	border:0;
-	padding:6px;
-	height:170px;
 	box-sizing:border-box;
+	padding:0;
+}
+.userPopout-4pfA0d .body-3rkFrF>*:nth-child(1),
+.userPopout-4pfA0d .body-3rkFrF .member-roles{
+	background-color:rgba(35, 35, 35, 0.1);
+	box-sizing:border-box;
+	padding:6px;
+	margin:0;
 }
 .userPopout-4pfA0d .body-3rkFrF .member-roles{
-	height:68px;
-	max-height:68px;
+	margin-bottom:12px;
 }
 .member-roles .member-role{
 	border-radius:0;
@@ -888,7 +895,7 @@ span:not(.channel-name):not(.spinner-item){
 	height:50px;
 	left:225px;
 	bottom:5px;
-	background:var(--popout-color-2) url("https://rawgit.com/KiwiNotKiwi/files/master/themefiles/icons/plus.svg") no-repeat 13px 50% / 24px;
+	background:var(--popout-color-2) no-repeat 13px 50% / 24px;
 	overflow:hidden;
 	border-radius:0;
 	border-radius:25px;
