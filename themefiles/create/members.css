@@ -1,1 +1,101 @@
-
+/*Theme Dark*/
+.theme-dark .channel-members{
+	background-color:var(--members);
+}
+.theme-dark .channel-members .member.popout-open,
+.theme-dark .channel-members .member:hover{
+	background:rgba(70,70,80,.3);
+}
+.theme-dark .channel-members .member.popout-open,
+.theme-dark .channel-members .member:hover{
+	background-color:transparent;
+}
+/*Channel Members*/
+.channel-members-wrap > div > div{
+	direction:rtl;
+}
+.channel-members-wrap > div > div > *{
+	direction:ltr;
+}
+.mask-2vyqAW{
+	-webkit-mask:initial;
+}
+.channel-members .member.popout-open,
+.channel-members .member{
+	padding:3px 4px 3px 6px;
+	margin:8px 4px 8px 24px;
+}
+.channel-members .member{
+	height:50px;
+}
+.channel-members .member .member-username{
+	
+}
+.channel-members .member .member-username-inner{
+	position:relative;
+	padding-bottom:6px;
+	transition:150ms padding-bottom ease-out;
+}
+.channel-members .member.popout-open .member-username-inner,
+.channel-members .member:hover .member-username-inner{
+	padding-bottom:10px;
+}
+.channel-members .member .member-username-inner:after{
+	content:"";
+	position:absolute;
+	top:20px;
+	left:0;
+	right:0;
+	height:2px;
+	background-color:rgba(255,255,255,.3);
+	transition:150ms top ease-out;
+}
+.channel-members .member.popout-open .member-username-inner:after,
+.channel-members .member:hover .member-username-inner:after{
+	background-color:rgba(255,255,255,1);
+}
+.channel-members .member.popout-open .member-username-inner:after,
+.channel-members .member:hover .member-username-inner:after{
+	top:24px;
+}
+.channel-members .member .member-activity-text{
+	padding-top:2px;
+	transition:150ms padding-top ease-out;
+}
+.channel-members .member.popout-open .member-activity-text,
+.channel-members .member:hover .member-activity-text{
+	padding-top:6px;
+}
+.channel-members .avatar-small{
+	width:40px;
+	height:40px;
+	background-size:0;
+	background-position:initial;
+	background-clip:initial;
+	transition:150ms margin ease-out;
+	margin:0 15px 0 5px
+}
+.channel-members .member.popout-open .avatar-small,
+.channel-members .member:hover .avatar-small{
+	margin:0 15px 0 0;
+}
+.channel-members .avatar-small .status{
+	background-image:inherit;
+	background-size:100% 100%;
+	width:inherit;
+	height:inherit;
+	border-radius:50%;
+	border:initial;
+	position:static;
+	background-color:initial;
+	transition:150ms border-radius ease-out;
+	box-shadow:0 0 0 3px currentColor;
+}
+.channel-members .avatar-small .status-typing{
+	right:initial!important;
+	width:40px!important;
+}
+.channel-members .member.popout-open .avatar-small .status,
+.channel-members .member:hover .avatar-small .status{
+	border-radius:5px;
+}
