@@ -1,1 +1,56 @@
+/*Theme Dark*/
+.theme-dark #friends{
+	background-color:var(--chat-friends);
+}
+.theme-dark .friends-table{
+	background-color:var(--chat-friends);
+}
+.theme-dark .private-channels .search-bar{
+	background-color:var(--header-bar);
+}
+.theme-dark .channels-3g2vYe{
+	background-color:var(--text-voice);
+}
+.theme-dark .headerBar-cxbhPD{
+	background-color:var(--header-bar);
+}
+/*Friends*/
+#friends{
+	z-index:1;
+}
+/*Search bar*/
+.private-channels .search-bar{
+	height:38px;
+}
+/*Private Channel List*/
+.private-channels .channel a,
+.private-channels .channel.selected a{
+	box-sizing:border-box;
+	padding:8px;
+	transition:padding .15s ease;
+}
+.private-channels .channel:hover a,
+#app-mount .private-channels .channel.selected a{
+	background-color:transparent;
+	padding:8px 14px;
+}
+.private-channels .channel:not(.btn-friends) .channel-name{
+	order:1;
+	position:relative;
+	flex-grow:1;
+}
 
+.private-channels .channel:not(.btn-friends) .avatar-small{
+	order:2;
+	width:30px;
+}
+.private-channels .channel:not(.btn-friends) .close{
+	order:3;
+}
+#app-mount .private-channels .channel.selected a .close{
+	display:block;
+}
+/*Friends Table Header*/
+.headerBar-cxbhPD{
+	height:38px;
+}
