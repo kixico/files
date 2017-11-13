@@ -1,1 +1,109 @@
-
+/*Theme Dark*/
+.theme-dark .guilds-wrapper{
+	background-color:var(--guild-bar);
+}
+.theme-dark .guilds-wrapper .guilds>.guild:hover:first-child .guild-inner[style]{
+	background-color:rgb(114,137,218);
+}
+.theme-dark .guilds-wrapper .guilds>.guild:first-child .guild-inner .friends-icon:before{
+	background-color:var(--header-bar);
+}
+/*Guilds Wrap*/
+.guilds-wrapper .scroller-wrap{
+	top:38px;
+	max-height:calc(100% - 38px);
+}
+.guilds-wrapper .guilds{
+	padding:4px 0 14px 10px;
+}
+/*Direct Messages*/
+.guilds-wrapper .guilds>.guild:first-child{
+	position:absolute;
+	top:-38px;
+	left:0;
+	margin:0 auto;
+	width:70px;
+	height:48px;
+	border-bottom:1px solid rgba(0,0,0,.2);
+	box-shadow:0 1px 0 rgba(0,0,0,.06);
+	height:38px;
+}
+.guilds-wrapper .guilds>.guild:first-child .guild-inner{
+	border-radius:0!important;
+	box-shadow:none;
+}
+.guilds-wrapper .guilds>.guild:first-child .guild-inner .friends-icon{
+	background-size:0;
+}
+.guilds-wrapper .guilds>.guild:first-child .guild-inner .friends-icon:before{
+	content:"";
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background-image:inherit;
+	background-repeat:no-repeat;
+	background-size:32px 28px;
+	background-position:center;
+}
+.guilds-wrapper .guilds>.guild:first-child *:not(.badge){width:inherit;height:inherit;}
+.guilds-wrapper .guilds>.guild:first-child .guild-inner a{
+	box-shadow:none;
+}
+.guilds-wrapper .guilds>.guild:first-child .badge{
+	bottom:3px;
+	right:3px;
+	border-radius:3px;
+	padding:1px 3px;
+}
+/*Public Button*/
+#bd-pub-li{
+	width:50px;
+	height:20px;
+}
+#bd-pub-li *{
+	width:inherit;
+	height:inherit;
+}
+#bd-pub-li .guild-inner{
+	box-shadow:none;
+}
+#bd-pub-li .guild-inner a{
+	box-shadow:none;
+}
+/*Guilds*/
+.guilds-wrapper .guilds .guild{
+	width:54px;
+	height:54px;
+}
+.guilds-wrapper .guilds .guild .guild-inner a{
+	box-shadow:inset 0 0 0 1.5px #000;
+	border-radius:inherit;
+}
+.guilds-wrapper .guilds .guild .guild-inner{
+	width:50px;
+	height:50px;
+}
+.guilds-wrapper .guilds .guild .guild-inner{
+	box-shadow:0 0 0 3px #43b581;
+}
+.guilds-wrapper .guilds .guild.selected.unread .guild-inner{
+	box-shadow:0 0 0 3px #faa61a;
+}
+.guilds-wrapper .guilds .guild.unread .guild-inner{
+	box-shadow:0 0 0 3px #f04747;
+}
+.guilds-wrapper .guilds .guild.selected .guild-inner{
+	box-shadow:0 0 0 3px #ffffff;
+}
+.guilds-wrapper .scroller-wrap .guilds .guild:before{
+	display:none;
+}
+/*Unread Message*/
+.unread-mentions-indicator-top{
+	top:54px;
+}
+.unread-mentions-indicator-bottom{
+	bottom:0px;
+}
