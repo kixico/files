@@ -1,1 +1,67 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
+body,
+span:not(.channel-name):not(.spinner-item){
+	backface-visibility:hidden;
+}
+.status-online{
+	color:#43b581;
+}
+.status-idle{
+	color:#faa61a;
+}
+.status-dnd{
+	color:#f04747;
+}
+.status-invisible,.status-offline{
+	color:#747f8d;
+}
+.status-streaming{
+	color:#593695;
+}
+.theme-dark .message-group a{
+	color:rgb(0,148,148);
+}
+#app-mount{
+	background-color:var(--bar-color);
+}
+.typeWindows-15E0Ys{
+	background-color:var(--bar-color);
+}
+
+#app-mount [class*="scroller"]::-webkit-scrollbar{
+	width:12px;
+}
+#app-mount [class*="scroller"]::-webkit-scrollbar-thumb{
+	border-radius:0;
+	border:2px solid transparent;
+}
+#app-mount [class*="scroller"]::-webkit-scrollbar-track-piece{
+	background:initial;
+	border:initial;
+}
+
+/*Messages*/
+#app-mount .messages.scroller::-webkit-scrollbar-thumb{
+	background-color:var(--form);
+}
+/*Channel Members*/
+.theme-dark .scrollerWrap-2uBjct .scroller-fzNley::-webkit-scrollbar-thumb{
+	background-color:var(--chat-friends);
+}
+/*Buttons*/
+.theme-dark .buttonBrandFilled-3Mv0Ra,
+.theme-dark .itemDefaultSelected-1UAWLe,
+.theme-dark .themeDefault-3M0dJU.valueChecked-3Bzkbm,
+.theme-dark .barFill-18ABna{
+	background-color:var(--buttons);
+}
+.theme-dark div[class*="card-" i][style*="background-color: rgb(114, 137, 218);" i],
+.theme-dark div[class*="checked-" i][style*="background-color: rgb(114, 137, 218);" i]{
+	background-color:var(--buttons)!important;
+	border-color:var(--buttons)!important;
+}
+
+.base-3AoPqv{
+	border-radius:0;
+}
