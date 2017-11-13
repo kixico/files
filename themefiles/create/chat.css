@@ -1,1 +1,140 @@
+/*Theme Dark*/
+.theme-dark .messages-wrapper{
+	background-color:var(--chat-friends);
+}
+.chat .messages{
+	direction:rtl;
+}
+.chat .messages>*{
+	direction:ltr;
+}
 
+.theme-dark .title-qAcLxz{
+	background-color:var(--header-bar);
+}
+.theme-dark .chat .content form [class*=channelTextArea-]{
+	background-color:var(--form);
+}
+.theme-dark .chat .content form .typing{
+	background-color:rgba(45,45,50, 0);
+}
+.theme-dark .message-group .embed{
+	background-color:rgba(70,70,80,.6);
+}
+.theme-dark .message-group .comment .markup pre{
+	background-color:transparent;
+}
+.theme-dark .message-group .comment .markup code.inline, .theme-dark .message-group .comment .markup pre code{
+	background-color:rgba(35,35,35,.3);
+}
+.theme-dark .friends-table .messages .divider-red span,
+.theme-dark .messages-wrapper .messages .divider-red span{
+	background-color:transparent;
+}
+.theme-dark .friends-table .messages .divider-red:before,
+.theme-dark .messages-wrapper .messages .divider-red:before{
+	left:115px;
+}
+.theme-dark .friends-table .messages .divider.divider-red>div,
+.theme-dark .messages-wrapper .messages .divider.divider-red>div{
+	opacity:.2;
+}
+/*Title Bar*/
+.title-qAcLxz{
+	height:38px;
+}
+/*Message Group*/
+.message-group:last-of-type{
+	padding-bottom:14px;
+}
+.embed,
+.embed-color-pill{
+	border-radius:0;
+}
+/*Divider*/
+.chat .divider.divider-red>div{
+	display:none;
+}
+.theme-dark .messages-wrapper .messages .divider:not(.red) div{
+	background:transparent;
+}
+/*Jump Bars*/
+.theme-dark .chat .jump-to-present-bar > button{
+	background-color:rgba(115,127,141,.9);
+}
+.theme-dark .chat .jump-to-present-bar > button:hover{
+	background-color:rgb(115, 127, 141);
+}
+
+.theme-dark .chat .new-messages-bar > button{
+	background-color:rgba(114,137,218,.9);
+}
+.theme-dark .chat .new-messages-bar > button:hover{
+	background-color:rgb(114,137,218);
+}
+
+.chat .messages-wrapper .new-messages-bar{
+	border-radius:0;
+	left:6px;
+	right:initial;
+	top:6px;
+	background-color:initial;
+	pointer-events:none;
+}
+
+.chat .new-messages-bar > button{
+	transition:background-color .2s;
+	pointer-events:auto;
+}
+.chat .new-messages-bar > button:first-child{
+	margin-right:10px;
+}
+
+.chat .messages-wrapper .jump-to-present-bar{
+	border-radius:0;
+	right:initial;
+	background-color:initial;
+	bottom:6px;
+	left:6px;
+	pointer-events:none;
+}
+.chat .messages-wrapper .jump-to-present-bar:hover{
+	background-color:initial;
+}
+.chat .jump-to-present-bar > button{
+	transition:background-color .2s;
+	pointer-events:auto;
+}
+.chat .jump-to-present-bar > button:first-child{
+	margin-right:10px;
+}
+/*Codeblock*/
+.message-group .comment .markup pre{
+	border-radius:0;
+	border:0px solid rgba(0,0,0,.1);
+}
+/*Form*/
+#app-mount .chat .content form{
+	margin:0;
+	background-color:transparent;
+	border-radius:0;
+	border:0;
+	z-index:1;
+	position:static;
+	box-shadow:none;
+}
+.chat .content form [class*="channelTextAreaDisabled"]{
+	opacity:1;
+}
+.chat .content form [class*=channelTextArea-]{
+	padding:4px 4px;
+	margin:0;
+}
+.chat .content form [class*=inner-]{
+	border-radius:0;
+}
+.chat .content form .typing{
+	justify-content:center;
+	pointer-events:none;
+	bottom:0;
+}
