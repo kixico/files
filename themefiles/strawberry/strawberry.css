@@ -118,6 +118,7 @@ span:not(.channel-name):not(.spinner-item){
 .base-3AoPqv{
 	border-radius:0;
 }
+
 /* ••·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
 /*		Guild Bar						*/
 /* ••·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
@@ -541,10 +542,11 @@ span:not(.channel-name):not(.spinner-item){
 	padding-bottom:6px;
 	transition:150ms padding-bottom ease-out;
 }
-.channel-members .member.popout-open .member-username-inner,
+
+/*.channel-members .member.popout-open .member-username-inner,
 .channel-members .member:hover .member-username-inner{
 	padding-bottom:10px;
-}
+}*/
 .channel-members .member .member-username-inner:after{
 	content:"";
 	position:absolute;
@@ -559,6 +561,7 @@ span:not(.channel-name):not(.spinner-item){
 .channel-members .member:hover .member-username-inner:after{
 	background-color:rgba(255,255,255,1);
 }
+/*
 .channel-members .member.popout-open .member-username-inner:after,
 .channel-members .member:hover .member-username-inner:after{
 	top:24px;
@@ -570,7 +573,7 @@ span:not(.channel-name):not(.spinner-item){
 .channel-members .member.popout-open .member-activity-text,
 .channel-members .member:hover .member-activity-text{
 	padding-top:6px;
-}
+}*/
 .channel-members .avatar-small{
 	width:40px;
 	height:40px;
