@@ -1,1 +1,31 @@
-
+.channel-members .avatar-small{
+	border-radius:0;
+	background-size:0;
+}
+.status.status-typing{
+	right:initial!important;
+	width:30px!important;
+}
+.status.status-typing .spinner-item{
+	opacity:1;
+}
+.channel-members .avatar-small .status{
+	border:initial;
+	box-shadow:0 0 0 3px currentColor,inset 0 0 0 1px #000;
+	background-color:initial;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	width:30px;
+	height:30px;
+	background-size:30px 30px;
+	background-image:inherit;
+	transition:200ms ease-out;
+	border-radius:50%;
+}
+.channel-members .member.popout-open .avatar-small .status,
+.channel-members .member:hover .avatar-small .status{border-radius:5px;}
+.channel-members .member.member-status-offline .status{
+	display:block;
+}
