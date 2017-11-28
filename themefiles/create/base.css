@@ -17,6 +17,110 @@ span:not(.channel-name):not(.spinner-item){
 .status-streaming{
 	color:#593695;
 }
+/*Big Dad*/
+.platform-win .layer{
+	padding-top:0;
+	top:0;
+}
+.titleBar-3_fDwJ{
+	top:0;
+	left:70px;
+	right:0;
+	margin:0;
+	height:22px;
+	align-items:center;
+	position:absolute;
+}
+.winButton-U7zAqI{
+	top:0;
+}
+.base-3AoPqv{
+	border-radius:0;
+	padding-top:22px;
+	
+}
+/*BetterDiscord Load Error Report*/
+[id*="bdalert-"]{
+	pointer-events:none;
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	z-index:4001;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+[id*="bdalert-"][style*="1"] ~ #app-mount *{
+	user-select:none;
+	pointer-events:none;
+}
+[id*="bdalert-"] .markdown-modal{
+	display:flex;
+	flex-direction:column;
+}
+[id*="bdalert-"] .markdown-modal-header{
+	background-color:#ccc;
+	height:20px;
+	position:relative;
+	display:flex;
+	align-items:center;
+	padding:0 3px;
+}
+[id*="bdalert-"] .markdown-modal-header>*{
+	display:flex;
+}
+[id*="bdalert-"] .markdown-modal-header strong{
+	flex:1;
+}
+[id*="bdalert-"] .markdown-modal-close{
+	pointer-events:auto;
+	border-radius:50%;
+	width:14px;
+	height:14px;
+	background-color:#f04747;
+	padding:0;
+	border:2px solid #ccc;
+	transition:150ms ease-out;
+}
+[id*="bdalert-"] .markdown-modal-close:hover{
+	border-color:#fff;
+}
+[id*="bdalert-"] .markdown-modal-footer{
+	background-color:#ccc;
+	padding:2px 3px;
+}
+[id*="bdalert-"] .markdown-modal-footer a{
+	pointer-events:auto;
+	margin:0 2px;
+	color:Teal;
+	font-weight:600;
+}
+[id*="bdalert-"] .scroller-wrap{
+	pointer-events:auto;
+	user-select:text;
+	background-color:#fff;
+}
+[id*="bdalert-"] .scroller-wrap .scroller{
+	padding-right:14px;
+	padding:2px 14px 2px 3px;
+	line-height:18px;
+	max-height:50vh;
+}
+[id*="bdalert-"] .scroller-wrap .scroller::-webkit-scrollbar{
+	width:12px;
+}
+[id*="bdalert-"] .scroller-wrap .scroller::-webkit-scrollbar-thumb{
+	border-radius:0;
+	border:2px solid transparent;
+	background-color:#ccc;
+}
+[id*="bdalert-"] .scroller-wrap .scroller::-webkit-scrollbar-track-piece{
+	background:initial;
+	border:initial;
+}
+
 /*Scrollers*/
 #app-mount [class*="scroller"]::-webkit-scrollbar{
 	width:12px;
