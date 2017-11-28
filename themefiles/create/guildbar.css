@@ -1,1 +1,101 @@
-
+.guilds-wrapper .guilds{
+	padding:0 0 0 10px;
+}
+.guilds-wrapper .guilds>.guild{
+	width:60px;
+	height:68px;
+	align-items:center;
+	justify-content:center;
+	display:flex;
+	position:static;
+	flex-direction:column;
+}
+.guilds-wrapper .guilds>.guild :not(:first-child) .guild-inner{
+	background:initial;
+	width:46px;
+	height:46px;
+}
+.guilds-wrapper .guilds>.guild:not(:first-child) .guild-inner a{
+	width:46px;
+	height:46px;
+	background-size:46px 46px;
+}
+.guilds-wrapper .guilds>.guild.selected .guild-inner{
+	border-radius:12px!important;
+	/*clip-path:polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);*/
+}
+.guilds-wrapper .guilds>.guild>div:not(.badge){
+	padding:3px;
+	width:100%;
+	display:flex;
+	justify-content:flex-start;
+	border-radius:50px 0 0 50px;
+	transition:150ms ease-out;
+}
+.guilds-wrapper .guilds>.guild:hover>div:not(.badge){
+	background-color:rgba(0,0,0,.2);
+	border-radius:16px 0 0 16px;
+}
+.guilds-wrapper .guilds>.guild.selected>div:not(.badge){
+	border-radius:15px 0 0 15px;
+	/*clip-path:polygon(11px 0%, 100% 0%, 100% 0, 100% 100%, 100% 100%, 11px 100%, 0% calc(100% - 11px), 0% 11px);*/
+}
+#app-mount .guilds-wrapper .guilds>.guild:before{
+	display:none;
+}
+.guilds-wrapper .guilds>.guild:after{
+	content:"";
+	width:3px;
+	position:absolute;
+	height:100%;
+	top:0;
+	right:18px;
+	pointer-events:none;
+}
+.guilds-wrapper .guilds>.guild.selected:after{
+	background-color:White;
+}
+.guilds-wrapper .guilds>.guild.selected.unread:after{
+	background-color:#43b581;
+}
+.guilds-wrapper .guilds>.guild.selected>div:not(.badge){
+	background-color:White;
+}
+.guilds-wrapper .guilds>.guild.selected.unread>div:not(.badge){
+	background-color:#43b581;
+}
+.guilds-wrapper .guilds>.guild+.guild{
+	margin-top:-12px;
+}
+.guilds-wrapper .guilds>.guild .badge{
+	position:relative;
+	display:flex;
+	transform:translate(14px,-18px)
+}
+.guilds-wrapper .guilds  .friends-online{
+	margin-top:-8px;
+}
+.guilds-wrapper .guilds>.guild:first-child{
+	position:sticky;
+	top:0;
+	margin-left:-10px;
+	width:68px;
+	height:60px;
+	justify-content:flex-start;
+}
+.guilds-wrapper .guilds>.guild:first-child .guild-inner{
+	background-color:initial!important;
+	border-radius:0!important;
+	transition:150ms ease-out;
+	padding:0;
+	height:50px;
+}
+.guilds-wrapper .guilds>.guild:first-child .guild-inner a{
+	width:100%;
+}
+.guilds-wrapper .guilds>.guild:first-child .friends-icon{
+	width:100%;
+}
+.guilds-wrapper .guilds>.guild:hover:first-child .guild-inner{
+	background-color:rgba(0,0,0,.2)!important;
+}
