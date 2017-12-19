@@ -24,7 +24,7 @@
 	background-color:rgb(70,70,80);
 	transition:250ms ease;
 }
-.guilds-wrapper .guilds .guild>div:first-child a{
+.guilds-wrapper .guilds>.guild>div:first-child a{
 	width:70px;
 }
 .guilds-wrapper .guilds .guild.unread>div:first-child{
