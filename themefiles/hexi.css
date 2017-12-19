@@ -1,0 +1,201 @@
+:root{
+	--chex: polygon(40% 7.67949%, 43.1596% 6.20615%, 46.52704% 5.30384%, 50% 5%, 53.47296% 5.30384%, 56.8404% 6.20615%, 60% 7.67949%, 81.65064% 20.17949%, 84.50639% 22.17911%, 86.97152% 24.64425%, 88.97114% 27.5%, 90.44449% 30.6596%, 91.34679% 34.02704%, 91.65064% 37.5%, 91.65064% 62.5%, 91.34679% 65.97296%, 90.44449% 69.3404%, 88.97114% 72.5%, 86.97152% 75.35575%, 84.50639% 77.82089%, 81.65064% 79.82051%, 60% 92.32051%, 56.8404% 93.79385%, 53.47296% 94.69616%, 50% 95%, 46.52704% 94.69616%, 43.1596% 93.79385%, 40% 92.32051%, 18.34936% 79.82051%, 15.49361% 77.82089%, 13.02848% 75.35575%, 11.02886% 72.5%, 9.55551% 69.3404%, 8.65321% 65.97296%, 8.34936% 62.5%, 8.34936% 37.5%, 8.65321% 34.02704%, 9.55551% 30.6596%, 11.02886% 27.5%, 13.02848% 24.64425%, 15.49361% 22.17911%, 18.34936% 20.17949%);
+}
+.base-3AoPqv{
+	border-radius:0;
+}
+
+.guilds-wrapper .guilds{
+	padding:0 0 10px 0;
+}
+.guilds-wrapper .guilds>.guild:first-child{
+	width:70px;
+}
+.guilds-wrapper .guilds>.guild:first-child .guild-inner{
+	border-radius:0!important;
+}
+.guilds-wrapper .guilds .friends-icon{
+	width:70px;
+}
+.guilds-wrapper .guilds .guild-separator ~ .guild>div:first-child{
+	clip-path:var(--chex);
+}
+.guilds-wrapper .guilds .guild>div:first-child{
+	background-color:rgb(70,70,80);
+	transition:250ms ease;
+}
+.guilds-wrapper .guilds .guild>div:first-child a{
+	width:70px;
+}
+.guilds-wrapper .guilds .guild.unread>div:first-child{
+	background-color:Crimson;
+}
+.guilds-wrapper .guilds .guild.selected>div:first-child{
+	background-color:White;
+}
+.guilds-wrapper .guilds .guild.selected.unread>div:first-child{
+	background-color:Yellow;
+}
+.guilds-wrapper .guilds .guild>div:hover:first-child{
+	background-color:rgb(140,140,150);
+}
+.guilds-wrapper .guilds .guild:before{
+	content:initial!important;
+}
+.guilds-wrapper .guilds .guild.audio .guild-inner:after, .guilds-wrapper .guilds .guild.video .guild-inner:after{
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	clip-path:var(--chex);
+	background-color:rgba(70,70,80,.8);
+	opacity:.85;
+}
+.guilds-wrapper .guilds .guild-separator ~ .guild .guild-inner{
+	background:transparent;
+}
+.guilds-wrapper .guilds .guild-separator ~ .guild .guild-inner a{
+	width:44px;
+	height:44px;
+	background-size:44px 44px;
+	margin:3px;
+	background-color:rgb(70,70,80);
+	clip-path:var(--chex);
+}
+.guilds-wrapper .guilds .guild-separator ~ .guild:nth-child(odd){
+	margin-top:-8px;
+	margin-left:2px;
+}
+.guilds-wrapper .guilds .guild-separator ~ .guild:nth-child(even){
+	margin-top:-8px;
+	margin-left:18px;
+}
+.guilds-wrapper .guilds-add{
+	clip-path:var(--chex);
+	background-color:rgb(70,70,80);
+	color:#ccc;
+}
+.guilds-wrapper .dms .guild:nth-child(odd){
+	margin-top:-8px;
+	margin-left:2px;
+}
+.guilds-wrapper .dms .guild:nth-child(even){
+	margin-top:-8px;
+	margin-left:18px;
+}
+.guilds-wrapper .dms .guild .guild-inner{
+	clip-path:var(--chex);
+	transition:250ms ease;
+	background-color:rgb(50,50,60)!important;
+}
+.guilds-wrapper .dms .guild:hover .guild-inner{
+	background-color:rgb(140,140,150)!important;
+}
+.guilds-wrapper .dms .guild .guild-inner a{
+	width:44px;
+	height:44px;
+	background-size:44px 44px;
+	margin:3px;
+	background-color:rgb(70,70,80);
+	clip-path:var(--chex);
+}
+
+.hljs{
+	white-space:normal;
+}
+
+.notice{
+	border-radius:0;
+}
+
+.avatarContainer-303pFz{
+	clip-path:var(--chex);
+	height:24px;
+}
+.avatarContainer-303pFz [class*="avatar"]{
+	clip-path:var(--chex);
+	width:24px;
+	height:24px;
+	position:relative;
+	border-radius:0;
+	margin:0;
+	box-shadow:initial;
+	background-color:transparent;
+	background-size:0;
+}
+#app-mount .avatarSpeaking-3teDH6{
+	background-color:#43b581;
+}
+.avatarContainer-303pFz [class*="avatar"]:after{
+	content:"";
+	position:absolute;
+	clip-path:var(--chex);
+	background-image:inherit;
+	background-repeat:no-repeat;
+	background-color:transparent;
+	background-position:center;
+	background-size:20px 20px;
+	width:20px;
+	height:20px;
+	margin:2px;
+	box-sizing:border-box;
+}
+#app-mount .avatarSpeaking-3teDH6:after{
+	background-color:#222;
+}
+.channels-3g2vYe .draggable-3SphXU:nth-child(odd){
+	margin-left:8px;
+	margin-top:-6px;
+}
+.channels-3g2vYe .draggable-3SphXU:nth-child(even){
+	margin-left:18px;
+	margin-top:-6px;
+}
+
+.private-channels .channel a{
+	transition:250ms ease;
+}
+.private-channels .channel:hover a{
+	padding:8px 14px;
+}
+.private-channels .channel .avatar-small{
+	order:2;
+	clip-path:var(--chex);
+}
+.private-channels .channel .avatar-small .status{
+	left:0;
+	right:0;
+	bottom:-4px;
+	border-top:1px solid #222;
+	margin:auto;
+	width:100%;
+	border-radius:0;
+	opacity:.8;
+}
+.private-channels .channel:not(.btn-friends) .channel-name{
+	order:1;
+}
+.private-channels .channel:not(.btn-friends) .close{
+	order:3;
+}
+.private-channels .channel.selected:not(.btn-friends) .close{
+	display:block;
+	margin-right:0;
+}
+.private-channels .channel:hover a{
+	background-color:transparent;
+}
+.private-channels .channel.selected a{
+	background-color:transparent;
+	padding:8px 14px;
+}
+.private-channels .channel:not(.btn-friends){
+	margin-top:-10px;
+}
+.private-channels .channel:nth-child(odd):not(.btn-friends) .avatar-small{
+	margin-right:-4px;
+}
+.private-channels .channel:nth-child(even):not(.btn-friends) .avatar-small{
+	margin-right:4px;
+}
