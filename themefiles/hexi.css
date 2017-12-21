@@ -5,6 +5,68 @@
 	border-radius:0;
 }
 
+#app-mount .theme-dark .scroller-wrap ::-webkit-scrollbar-track-piece{
+	background-color:initial;
+	border-radius:0;
+	border:initial;
+}
+#app-mount .theme-dark .scroller-wrap ::-webkit-scrollbar-thumb{
+	border:2px solid transparent;
+	border-radius:0;
+	background-color:rgba(70,70,80,.6);
+}
+.theme-dark .container-2OU7Cz{
+	background:url("https://meme.cx/req/ref/mountain1080p.jpg") no-repeat 50% 100% / 100% auto;
+}
+.theme-dark .guilds-wrapper{
+	background-color:rgba(70,70,80,.4);
+}
+.theme-dark .channels-3g2vYe{
+	background-color:rgba(70,70,80,.2);
+}
+.theme-dark .chat{
+	background-color:rgba(70,70,80,0);
+}
+.theme-dark .container-RYiLUQ{
+	background-color:rgba(70,70,80,.2);
+}
+.theme-dark .private-channels{
+	background-color:rgba(70,70,80,.2);
+}
+.theme-dark .container-iksrDt{
+	background-color:rgba(70,70,80,.2);
+}
+.theme-dark .channel-notices .channel-notice{
+	background-color:rgba(70,70,80,.2);
+}
+.theme-dark .title-qAcLxz{
+	background-color:rgba(70,70,80,.2);
+}
+.theme-dark .chat>.content{
+	background-color:rgba(70,70,80,.4);
+}
+.theme-dark .messages-wrapper{
+	background-color:rgba(70,70,80,0);
+}
+.theme-dark .chat form{
+	background-color:rgba(70,70,80,0);
+}
+.theme-dark .channel-members{
+	background-color:rgba(70,70,80,0);
+}
+.theme-dark .friends-table{
+	background-color:rgba(70,70,80,.2);
+}
+.theme-dark .chat form .typing{
+	background-color:rgba(70,70,80,0);
+}
+.channel-notices .channel-notice .message .btn{
+	background-color:rgba(70,70,80,.3);
+}
+.theme-dark .layer{
+	background-color:#3a3184;
+}
+
 .guilds-wrapper .guilds{
 	padding:0 0 10px 0;
 }
@@ -13,6 +75,11 @@
 }
 .guilds-wrapper .guilds>.guild:first-child .guild-inner{
 	border-radius:0!important;
+	opacity:.2;
+	transition:250ms opacity ease;
+}
+.guilds-wrapper .guilds>.guild:hover:first-child .guild-inner{
+	opacity:.8;
 }
 .guilds-wrapper .guilds .friends-icon{
 	width:70px;
@@ -100,6 +167,10 @@
 	background-color:rgb(70,70,80);
 	clip-path:var(--chex);
 }
+.guilds-wrapper .guilds .guild .badge{
+	bottom:8px;
+}
+
 
 .hljs{
 	white-space:normal;
@@ -199,3 +270,53 @@
 .private-channels .channel:nth-child(even):not(.btn-friends) .avatar-small{
 	margin-right:4px;
 }
+
+.message-group{
+	
+}
+.message-group .comment{
+	position:relative;
+	display:flex;
+	background-color:rgba(70,70,80,.6);
+	flex-direction:column;
+	flex:initial;
+	border-radius:5px 0 0 5px;
+	box-sizing:border-box;
+	padding:3px 10px 3px 10px;
+}
+.message-group .comment .message .message-text{
+	transition:150ms ease;
+}
+.message-group .comment:hover .message .message-text{
+	padding-right:36px;
+}
+.message-group .comment .message{
+	flex-direction:column;
+	display:flex;
+}
+.message-group .comment .markup{
+	float:left;
+}
+.message-group .btn-option{
+	margin-top:6px;
+	margin-right:-20px;
+}
+.message-group .btn-reaction{
+	margin-top:6px;
+	margin-right:-36px;
+}
+.chat .avatar-large{
+	clip-path:var(--chex);
+}
+.theme-dark .message-group h2{
+	border-bottom:1px solid rgba(50,50,60,.3);
+}
+.theme-dark .message-group h2 strong:after{
+	content:"";
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:2px;
+	color:inherit;
+	background-color:currentColor
